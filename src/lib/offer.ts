@@ -79,7 +79,8 @@ export const offer = {
     },
   ],
   valueStack: {
-    title: "Complete Value Stack",
+    title: "Choose Your Investment",
+    subheadline: "Base program includes 4 people (manager + 3 reports). Add more anytime.",
     items: [
       { name: "38 Individual Coaching Sessions", value: "€7,600" },
       { name: "11 Team Coaching Sessions", value: "€4,400" },
@@ -90,8 +91,8 @@ export const offer = {
     ],
     totalValue: "€30,950",
     investment: {
-      upfront: "€10,000",
-      installments: "€14,000",
+      upfront: "€12,000",
+      installments: "€16,000",
       installmentBreakdown: "€3,000 setup + €1,000/month",
       addOn: "€2,200 each (instead of €3,000)",
     },

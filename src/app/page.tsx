@@ -3,9 +3,7 @@ import Pain from "@/components/sections/Pain";
 import DreamOutcome from "@/components/sections/DreamOutcome";
 import ProgramTimeline from "@/components/sections/ProgramTimeline";
 import About from "@/components/sections/About";
-import CaseStudies from "@/components/sections/CaseStudies";
 import ValueStack from "@/components/sections/ValueStack";
-import Guarantee from "@/components/sections/Guarantee";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
@@ -82,9 +80,9 @@ export default function Home() {
       <DreamOutcome />
       <ProgramTimeline />
       <About />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <ValueStack />
-      <Guarantee />
+      {/* <Guarantee /> */}
       <FinalCTA />
     </>
   );
