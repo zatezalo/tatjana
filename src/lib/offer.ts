@@ -9,7 +9,7 @@ export const offer = {
     subheadline: " As a founder, you’re not just losing productivity you’re losing sleep, money, and momentum.",
     bullets: [
       "You delegate work, but it comes back late, half-done, or not at all.",
-      "You repeat yourself in every meeting, yet nothing changes.",
+      "YYou repeat your feedback in every meeting, yet nothing changes.",
       "You’re stuck fixing fires your team should have prevented.",
       "You hire smart people, but they still don’t act like owners.",
       "You miss deadlines, lose deals, or burn cash because the team can’t align."
