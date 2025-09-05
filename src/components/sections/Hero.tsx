@@ -4,35 +4,35 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-primary/10">
-      <div className="container mx-auto px-4 py-20">
+    <section id="hero" className="relative min-h-[80vh] sm:min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-primary/10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-8">
-            <Users className="w-4 h-4" />
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-6 sm:mb-8">
+            <Users className="w-3 h-3 sm:w-4 sm:h-4" />
             Team transformation Program
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-          Turn Dysfunctional Teams into {" "}
-            <span className="text-primary">High-Performing Units That Actually Deliver</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+            Turn Dysfunctional Teams into{" "}
+            <span className="text-primary block sm:inline">High-Performing Units That Actually Deliver</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
             In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4">
+            <Button asChild size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto">
               <Link href="/book">
                 Book Your Free Consultation
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
+            <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto">
               Learn More
             </Button>
           </div>
