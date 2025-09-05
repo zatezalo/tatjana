@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Target, TrendingUp } from "lucide-react";
+import { ArrowRight, Users, BarChart3, Clock, DollarSign } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -15,8 +15,8 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Turn Dysfunctional Teams into{" "}
-            <span className="text-primary">High-Performing Units</span>
+          Turn Dysfunctional Teams into {" "}
+            <span className="text-primary">High-Performing Units That Actually Deliver</span>
           </h1>
 
           {/* Subheadline */}
@@ -41,24 +41,24 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="w-8 h-8 text-primary" />
+                <BarChart3 className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">12 Months</h3>
-              <p className="text-muted-foreground">Complete transformation timeline</p>
+              <h3 className="text-2xl font-bold text-foreground mb-2">50% More Output</h3>
+              <p className="text-muted-foreground">Guaranteed or we advise who to replace</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-primary" />
+                <Clock className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">100%</h3>
-              <p className="text-muted-foreground">Team participation guaranteed</p>
+              <h3 className="text-2xl font-bold text-foreground mb-2">90 Days</h3>
+              <p className="text-muted-foreground">To see the first visible wins</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-primary" />
+                <DollarSign className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">€30K+</h3>
-              <p className="text-muted-foreground">Total program value</p>
+              <h3 className="text-2xl font-bold text-foreground mb-2">3–10x ROI</h3>
+              <p className="text-muted-foreground">from retained talent, faster delivery, and new initiatives</p>
             </div>
           </div>
         </div>
