@@ -62,7 +62,7 @@ export default function ValueStack() {
             {/* Investment Options */}
             <Card className="h-fit shadow-lg">
               <CardContent className="space-y-6 pt-8">
-                <div className="text-center mb-6">
+                {/* <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-foreground mb-2">
                     Choose Your Investment
                   </h3>
@@ -70,7 +70,7 @@ export default function ValueStack() {
                     Get {offer.valueStack.totalValue} worth of transformation for
                     a fraction of the cost
                   </p>
-                </div>
+                </div> */}
                 {/* Upfront Option */}
                 <div className="text-center p-6 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border-2 border-primary/30 relative hover:border-primary/40 transition-colors">
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
