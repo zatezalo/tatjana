@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Quote, TrendingUp, Users, Clock } from "lucide-react";
+import { Quote, TrendingUp, Users } from "lucide-react";
 import { offer } from "@/lib/offer";
 
 export default function CaseStudies() {

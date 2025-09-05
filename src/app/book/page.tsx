@@ -14,7 +14,7 @@ export default function BookPage() {
               Book Your Free Consultation
             </h1>
             <p className="text-xl text-muted-foreground">
-              Schedule a 30-minute call to discuss your team's transformation needs.
+              Schedule a 30-minute call to discuss your team&apos;s transformation needs.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function BookPage() {
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-sm text-foreground">Think about your team's biggest challenges</p>
+                    <p className="text-sm text-foreground">Think about your team&apos;s biggest challenges</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
@@ -103,7 +103,7 @@ export default function BookPage() {
               {/* Alternative Contact */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Can't Find a Time?</CardTitle>
+                  <CardTitle className="text-lg">Can&apos;t Find a Time?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">
