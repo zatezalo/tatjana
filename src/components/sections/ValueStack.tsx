@@ -124,14 +124,13 @@ export default function ValueStack() {
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
                       Add extra person: €3,000 (default team size is 4)
                     </div>
-                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                  </div>
+                  <div className="text-xs text-muted-foreground space-y-1">
+                    <p className="italic">
                       This is launch pricing. The next cohort increases. Lock
                       your spot now.
-                    </div>
+                    </p>
                   </div>
-                  <Badge variant="outline" className="text-xs">
-                    Flexible Payment
-                  </Badge>
                 </div>
 
                 {/* Add-on Option */}
