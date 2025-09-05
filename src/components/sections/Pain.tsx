@@ -18,11 +18,15 @@ export default function Pain() {
           {offer.pain.bullets.map((bullet, index) => {
             const icons = [X, AlertTriangle, Clock, Users, Target];
             const Icon = icons[index];
+            const isLastItem = index === offer.pain.bullets.length - 1;
+            const isOddCount = offer.pain.bullets.length % 2 === 1;
             
             return (
               <div
                 key={index}
-                className="flex items-start gap-4 p-6 bg-background rounded-lg border border-destructive/20 hover:border-destructive/40 transition-colors"
+                className={`flex items-start gap-4 p-6 bg-background rounded-lg border border-destructive/20 hover:border-destructive/40 transition-colors ${
+                  isLastItem && isOddCount ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''
+                }`}
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center">
                   <Icon className="w-6 h-6 text-destructive" />

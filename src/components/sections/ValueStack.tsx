@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Euro, Users } from "lucide-react";
+import { CheckCircle, Users } from "lucide-react";
 import { offer } from "@/lib/offer";
 import Link from "next/link";
 
@@ -44,13 +44,13 @@ export default function ValueStack() {
               <div className="text-center">
                
                 <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8 max-w-4xl mx-auto">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
+                  {/* <h3 className="text-2xl font-bold text-foreground mb-4">
                     Complete Transformation Package
                   </h3>
                   <p className="text-muted-foreground text-lg mb-6">
                     Everything you need to transform your team is included. No
                     hidden costs, no upsells, just complete transformation.
-                  </p>
+                  </p> */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                     <div className="bg-background p-4 rounded-lg border border-primary/10">
                       <div className="text-2xl font-bold text-primary mb-2">
@@ -101,7 +101,7 @@ export default function ValueStack() {
                     </Badge>
                   </div>
                   <div className="flex items-center justify-center gap-2 mb-2">
-                    <Euro className="w-5 h-5 text-primary" />
+                    {/* <Euro className="w-5 h-5 text-primary" /> */}
                     <span className="text-4xl font-bold text-primary">
                       {offer.valueStack.investment.upfront}
                     </span>
@@ -120,7 +120,7 @@ export default function ValueStack() {
                 {/* Installment Option */}
                 <div className="text-center p-6 bg-muted/50 rounded-lg border-2 border-muted">
                   <div className="flex items-center justify-center gap-2 mb-2">
-                    <Euro className="w-5 h-5 text-foreground" />
+                    {/* <Euro className="w-5 h-5 text-foreground" /> */}
                     <span className="text-4xl font-bold text-foreground">
                       {offer.valueStack.investment.installments}
                     </span>
