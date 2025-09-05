@@ -1,0 +1,135 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Calendar, Clock, Users, CheckCircle } from "lucide-react";
+import Link from "next/link";
+
+export default function BookPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-primary/5 to-primary/10">
+      <div className="container mx-auto px-4 py-20">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Book Your Free Consultation
+            </h1>
+            <p className="text-xl text-muted-foreground">
+              Schedule a 30-minute call to discuss your team's transformation needs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Booking Widget */}
+            <div className="lg:col-span-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Calendar className="w-5 h-5 text-primary" />
+                    Schedule Your Call
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {/* Placeholder for Calendly/Google Calendar embed */}
+                  <div className="bg-muted/30 rounded-lg p-12 text-center border-2 border-dashed border-primary/20">
+                    <Calendar className="w-16 h-16 text-primary/40 mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                      Scheduling Widget
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      Replace this placeholder with your Calendly, Google Calendar, or other scheduling widget.
+                    </p>
+                    <div className="bg-background p-4 rounded-lg border">
+                      <code className="text-sm text-muted-foreground">
+                        &lt;iframe src="https://calendly.com/your-username" width="100%" height="600"&gt;&lt;/iframe&gt;
+                      </code>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Sidebar */}
+            <div className="space-y-6">
+              {/* What to Expect */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">What to Expect</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="font-medium text-foreground">30 Minutes</h4>
+                      <p className="text-sm text-muted-foreground">Focused discussion about your team</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="font-medium text-foreground">Team Assessment</h4>
+                      <p className="text-sm text-muted-foreground">Understanding your current challenges</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="font-medium text-foreground">Next Steps</h4>
+                      <p className="text-sm text-muted-foreground">Clear path forward for your team</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Preparation */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">How to Prepare</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-foreground">Think about your team's biggest challenges</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-foreground">Consider what success would look like</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-foreground">Have your team size and structure ready</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-foreground">Prepare any specific questions</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Alternative Contact */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Can't Find a Time?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    If none of the available times work for you, we can arrange a different time.
+                  </p>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/#cta">Contact Us Instead</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Back to Home */}
+          <div className="text-center mt-12">
+            <Button asChild variant="ghost">
+              <Link href="/">← Back to Home</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
