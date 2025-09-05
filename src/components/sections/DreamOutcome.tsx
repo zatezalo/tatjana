@@ -10,7 +10,7 @@ export default function DreamOutcome() {
             {offer.dream.title}
           </h2>
           <p className="text-xl text-muted-foreground">
-            Picture your team operating at peak performance with these transformational outcomes.
+            {offer.dream.subheadline}
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function DreamOutcome() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full text-lg font-medium">
             <CheckCircle className="w-5 h-5" />
-            This is what your team will become
+            {offer.dream.conclusion}
           </div>
         </div>
       </div>

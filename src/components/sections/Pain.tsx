@@ -1,4 +1,4 @@
-import { X, AlertTriangle, Clock, Users } from "lucide-react";
+import { X, AlertTriangle, Clock, Users, Target } from "lucide-react";
 import { offer } from "@/lib/offer";
 
 export default function Pain() {
@@ -10,13 +10,13 @@ export default function Pain() {
             {offer.pain.title}
           </h2>
           <p className="text-xl text-muted-foreground">
-            These common team problems are costing you productivity, revenue, and peace of mind.
+            {offer.pain.subheadline}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {offer.pain.bullets.map((bullet, index) => {
-            const icons = [X, AlertTriangle, Clock, Users];
+            const icons = [X, AlertTriangle, Clock, Users, Target];
             const Icon = icons[index];
             
             return (
@@ -39,7 +39,7 @@ export default function Pain() {
 
         <div className="text-center mt-12">
           <p className="text-lg text-muted-foreground">
-            <strong className="text-foreground">Don&apos;t let these issues continue to drain your team&apos;s potential.</strong>
+            <strong className="text-foreground">{offer.pain.conclusion}</strong>
           </p>
         </div>
       </div>

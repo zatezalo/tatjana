@@ -5,22 +5,27 @@ export const offer = {
     cta: "Book Your Free 30-Minute Consultation",
   },
   pain: {
-    title: "Is Your Team Struggling With These Issues?",
+    title: "Do These Team Problems Sound Familiar?",
+    subheadline: " As a founder, you’re not just losing productivity you’re losing sleep, money, and momentum.",
     bullets: [
-      "Poor communication and duplicated work",
-      "Conflicts, mistrust, and toxic culture",
-      "Dropped productivity and missed deadlines",
-      "High turnover and demotivated employees",
+      "You delegate work, but it comes back late, half-done, or not at all.",
+      "You repeat yourself in every meeting, yet nothing changes.",
+      "You’re stuck fixing fires your team should have prevented.",
+      "You hire smart people, but they still don’t act like owners.",
+      "You miss deadlines, lose deals, or burn cash because the team can’t align."
     ],
+    conclusion: "If this feels like your daily reality you don’t have a bad business, you have a team problem. And it’s solvable.",
   },
   dream: {
-    title: "Imagine Your Team After Transformation",
+    title: "Here’s What Leading Your Team Will Feel Like",
+    subheadline: "Instead of chasing, correcting, or repeating yourself—this is the new normal:",
     bullets: [
-      "Communicates clearly, even under stress",
-      "Collaborates instead of competing",
-      "Proactive solutions and new revenue ideas",
-      "Projects delivered on time and with quality",
+      "You delegate once, and it gets done on time, without chasing.",
+      "Meetings are short, decisions stick, execution follows.",
+      "Team members bring you proactive solutions and revenue ideas, not excuses.",
+      "Projects finish on schedule and with quality you trust.",
     ],
+    conclusion: "This is what happens when dysfunction turns into ownership.",
   },
   timeline: {
     title: "Your 12-Month Transformation Journey",
