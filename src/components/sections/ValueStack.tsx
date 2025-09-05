@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Euro, Users } from "lucide-react";
 import { offer } from "@/lib/offer";
+import Link from "next/link";
 
 export default function ValueStack() {
   return (
@@ -147,8 +148,10 @@ export default function ValueStack() {
                 </div>
 
                 <div className="pt-4">
-                  <Button className="w-full" size="lg">
-                    Book Your Free Consultation
+                  <Button asChild className="w-full" size="lg">
+                    <Link href="/book">
+                      Book Your Free Consultation
+                    </Link>
                   </Button>
                 </div>
               </CardContent>

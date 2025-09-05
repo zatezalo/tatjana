@@ -6,8 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Send, AlertCircle } from "lucide-react";
+import { CheckCircle, Send, AlertCircle, ArrowRight } from "lucide-react";
 import { offer } from "@/lib/offer";
+import Link from "next/link";
 
 export default function FinalCTA() {
   const [formData, setFormData] = useState({
@@ -40,7 +41,7 @@ export default function FinalCTA() {
       } else {
         setSubmitStatus("error");
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -263,6 +264,24 @@ export default function FinalCTA() {
                   Limited spots available
                 </Badge>
               </div>
+            </div>
+          </div>
+
+          {/* Alternative CTA */}
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Ready to Get Started?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Skip the form and book your free consultation directly
+              </p>
+              <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">
+                <Link href="/book">
+                  Book Free Consultation
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

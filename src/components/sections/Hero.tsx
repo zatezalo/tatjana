@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Target, TrendingUp } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -25,9 +26,11 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button size="lg" className="text-lg px-8 py-6 h-auto">
-              Book Your Free 30-Minute Consultation
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">
+              <Link href="/book">
+                Book Your Free 30-Minute Consultation
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
               Learn More

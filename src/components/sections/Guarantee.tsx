@@ -2,6 +2,7 @@ import { Shield, CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { offer } from "@/lib/offer";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Guarantee() {
   return (
@@ -34,9 +35,11 @@ export default function Guarantee() {
               </div>
               
               <div className="text-center">
-                <Button size="lg" className="text-lg px-8 py-6 h-auto">
-                  Start Your Transformation
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">
+                  <Link href="/book">
+                    Start Your Transformation
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-4">
                   No risk, no questions asked. We&apos;re confident in our results.
