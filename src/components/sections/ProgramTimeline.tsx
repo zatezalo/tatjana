@@ -19,7 +19,7 @@ export default function ProgramTimeline() {
             <div key={index} className="relative">
               {/* Timeline line */}
               {index < offer.timeline.phases.length - 1 && (
-                <div className="absolute left-8 top-16 w-0.5 h-32 bg-primary/20"></div>
+                <div className="absolute left-8 top-16 w-0.5 h-full bg-primary/20"></div>
               )}
               
               <div className="flex items-start gap-8 mb-16">
