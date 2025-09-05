@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, BarChart3, Clock, DollarSign } from "lucide-react";
+import { ArrowRight, Users } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
