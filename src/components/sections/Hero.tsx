@@ -20,7 +20,7 @@ export default function Hero() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
             Double Your Team&apos;s Output in{" "}
             <span className="text-primary block sm:inline">
-              2 Months—Without Hiring Anyone New
+              12 Months—Without Hiring Anyone New
             </span>
           </h1>
 
