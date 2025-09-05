@@ -1,4 +1,4 @@
-import { CheckCircle, MessageCircle, Lightbulb, Calendar } from "lucide-react";
+import { CheckCircle, Clock, Users, TrendingUp, Shield } from "lucide-react";
 import { offer } from "@/lib/offer";
 
 export default function DreamOutcome() {
@@ -16,13 +16,17 @@ export default function DreamOutcome() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {offer.dream.bullets.map((bullet, index) => {
-            const icons = [MessageCircle, CheckCircle, Lightbulb, Calendar];
+            const icons = [CheckCircle, Clock, Users, TrendingUp, Shield];
             const Icon = icons[index];
+            const isLastItem = index === offer.dream.bullets.length - 1;
+            const isOddCount = offer.dream.bullets.length % 2 === 1;
             
             return (
               <div
                 key={index}
-                className="flex items-start gap-4 p-6 bg-background rounded-lg border border-primary/20 hover:border-primary/40 transition-colors shadow-sm"
+                className={`flex items-start gap-4 p-6 bg-background rounded-lg border border-primary/20 hover:border-primary/40 transition-colors shadow-sm ${
+                  isLastItem && isOddCount ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''
+                }`}
               >
                 <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <Icon className="w-6 h-6 text-primary" />
