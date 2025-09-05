@@ -31,27 +31,6 @@ export default function Hero() {
             creates new revenue, and stops draining your energy.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4">
-            <Button
-              asChild
-              size="lg"
-              className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto"
-            >
-              <Link href="/book">
-                Book Your Free Consultation
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto"
-            >
-              Learn More
-            </Button>
-          </div>
-
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
@@ -89,6 +68,27 @@ export default function Hero() {
                 program pays for itself in savings + new initiatives
               </p>
             </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 px-4 mt-8">
+            <Button
+              asChild
+              size="lg"
+              className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto"
+            >
+              <Link href="/book">
+                Start With a Free 30-Minute Call
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+              </Link>
+            </Button>
+            {/* <Button
+              variant="outline"
+              size="lg"
+              className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto"
+            >
+              Learn More
+            </Button> */}
           </div>
         </div>
       </div>
