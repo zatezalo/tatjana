@@ -22,7 +22,7 @@ export default function Home() {
       "@type": "Offer",
       "name": "Team Transformation Program",
       "description": "Complete 12-month team transformation program with coaching, workshops, and assessments",
-      "price": "10000",
+      "price": 10000,
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
       "validFrom": "2024-01-01",

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Team Transformation Program | Turn Dysfunctional Teams into High-Performing Units",
-    description: "In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.",
+    description: "Team coaching and leadership development program (12 months). In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.",
     url: "https://teamtransformation.com",
     siteName: "Team Transformation Program",
     images: [
