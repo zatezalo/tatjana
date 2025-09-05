@@ -16,15 +16,15 @@ export default function ProgramTimeline() {
 
         <div className="max-w-4xl mx-auto">
           {offer.timeline.phases.map((phase, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative ">
               {/* Timeline line */}
               {index < offer.timeline.phases.length - 1 && (
-                <div className="absolute left-8 top-16 w-0.5 h-full bg-primary/20"></div>
+                <div className="absolute left-8 top-16 w-0.5 h-full bg-primary/20 hidden md:block"></div>
               )}
               
               <div className="flex items-start gap-8 mb-16">
                 {/* Phase number and icon */}
-                <div className="flex-shrink-0 w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl relative z-10">
+                <div className="hidden md:flex flex-shrink-0 w-16 h-16 bg-primary rounded-full items-center justify-center text-white font-bold text-xl relative z-10">
                   {index + 1}
                 </div>
                 
