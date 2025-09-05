@@ -90,13 +90,20 @@ export default function ValueStack() {
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
                       Save €4,000 vs flexible plan (25% off)
                     </div>
-                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Save €18,950 vs itemized value ({offer.valueStack.totalValue})
+                    <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
+                      Save €18,950 vs itemized value (
+                      {offer.valueStack.totalValue})
+                    </div>
+                    <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
+                      Add extra seat: {offer.valueStack.investment.addOn}{" "}
+                      (default team size is 4)
                     </div>
                   </div>
                   <div className="text-xs text-muted-foreground space-y-1">
-                    <p>Add extra seat: {offer.valueStack.investment.addOn} (default team size is 4)</p>
-                    <p className="italic">Why? Speed + commitment = results. That&apos;s why PIF is heavily discounted.</p>
+                    <p className="italic">
+                      Why? Speed + commitment = results. That&apos;s why PIF is
+                      heavily discounted.
+                    </p>
                   </div>
                 </div>
 
@@ -114,8 +121,12 @@ export default function ValueStack() {
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
                       {offer.valueStack.investment.installmentBreakdown}
                     </div>
-                    <div className="bg-amber-50 text-amber-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Launch pricing - next cohort increases
+                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                      Add extra person: €3,000 (default team size is 4)
+                    </div>
+                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                      This is launch pricing. The next cohort increases. Lock
+                      your spot now.
                     </div>
                   </div>
                   <Badge variant="outline" className="text-xs">

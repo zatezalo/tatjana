@@ -93,8 +93,8 @@ export const offer = {
     investment: {
       upfront: "€12,000",
       installments: "€16,000",
-      installmentBreakdown: "€3,000 setup + €1,000/month",
-      addOn: "€2,200 each (instead of €3,000)",
+      installmentBreakdown: "€3,000 setup + €1,182/month x 11",
+      addOn: "€2,200 each",
     },
   },
   guarantee: {
