@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-primary/10">
+    <section id="hero" className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-primary/10">
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
@@ -38,7 +38,7 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BarChart3 className="w-8 h-8 text-primary" />
@@ -60,7 +60,7 @@ export default function Hero() {
               <h3 className="text-2xl font-bold text-foreground mb-2">3–10x ROI</h3>
               <p className="text-muted-foreground">from retained talent, faster delivery, and new initiatives</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

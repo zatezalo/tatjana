@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Hero";
 import Pain from "@/components/sections/Pain";
 import DreamOutcome from "@/components/sections/DreamOutcome";
 import ProgramTimeline from "@/components/sections/ProgramTimeline";
+import About from "@/components/sections/About";
 import CaseStudies from "@/components/sections/CaseStudies";
 import ValueStack from "@/components/sections/ValueStack";
 import Guarantee from "@/components/sections/Guarantee";
@@ -80,6 +81,7 @@ export default function Home() {
       <Pain />
       <DreamOutcome />
       <ProgramTimeline />
+      <About />
       <CaseStudies />
       <ValueStack />
       <Guarantee />
