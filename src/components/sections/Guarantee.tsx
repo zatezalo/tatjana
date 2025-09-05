@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Guarantee() {
   return (
-    <section className="py-20 bg-background">
+    <section id="guarantee" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
@@ -25,7 +25,7 @@ export default function Guarantee() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="flex items-center gap-3 p-4 bg-background/50 rounded-lg">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
-                  <span className="font-medium text-foreground">Complete team transformation</span>
+                  <span className="font-medium text-foreground">Complete Team transformation</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-background/50 rounded-lg">
                   <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />

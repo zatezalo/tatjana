@@ -11,7 +11,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Team Transformation Program",
+    "name": "Team transformation Program",
     "description": "In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.",
     "provider": {
       "@type": "Organization",
@@ -20,8 +20,8 @@ export default function Home() {
     },
     "offers": {
       "@type": "Offer",
-      "name": "Team Transformation Program",
-      "description": "Complete 12-month team transformation program with coaching, workshops, and assessments",
+      "name": "Team transformation Program",
+      "description": "Complete 12-month Team transformation program with coaching, workshops, and assessments",
       "price": 10000,
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
@@ -32,7 +32,7 @@ export default function Home() {
     "areaServed": "Worldwide",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Team Transformation Services",
+      "name": "Team transformation Services",
       "itemListElement": [
         {
           "@type": "Offer",

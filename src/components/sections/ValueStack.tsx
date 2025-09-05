@@ -6,7 +6,7 @@ import { offer } from "@/lib/offer";
 
 export default function ValueStack() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 to-primary/10">
+    <section id="value" className="py-20 bg-gradient-to-br from-primary/5 to-primary/10">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -15,7 +15,7 @@ export default function ValueStack() {
             </h2>
 
             <p className="text-xl text-muted-foreground">
-              Everything you need for complete team transformation, valued at{" "}
+              Everything you need for complete Team transformation, valued at{" "}
               {offer.valueStack.totalValue}.
             </p>
           </div>

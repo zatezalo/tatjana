@@ -5,7 +5,7 @@ import { offer } from "@/lib/offer";
 
 export default function CaseStudies() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="case-studies" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -61,7 +61,7 @@ export default function CaseStudies() {
 
                   {/* Testimonial */}
                   <div className="bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
-                    <p className="text-foreground italic mb-3">"{study.testimonial}"</p>
+                    <p className="text-foreground italic mb-3">&quot;{study.testimonial}&quot;</p>
                     <p className="text-sm font-medium text-primary">— {study.author}</p>
                   </div>
                 </CardContent>

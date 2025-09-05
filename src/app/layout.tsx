@@ -4,12 +4,12 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Team Transformation Program | Turn Dysfunctional Teams into High-Performing Units",
-  description: "In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse. Complete team transformation program with proven results.",
-  keywords: "team transformation, team coaching, team building, leadership development, team performance, workplace culture",
-  authors: [{ name: "Team Transformation Program" }],
-  creator: "Team Transformation Program",
-  publisher: "Team Transformation Program",
+  title: "Team transformation Program | Turn Dysfunctional Teams into High-Performing Units",
+  description: "In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse. Complete Team transformation program with proven results.",
+  keywords: "Team transformation, team coaching, team building, leadership development, team performance, workplace culture",
+  authors: [{ name: "Team transformation Program" }],
+  creator: "Team transformation Program",
+  publisher: "Team transformation Program",
   formatDetection: {
     email: false,
     address: false,
@@ -20,16 +20,16 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Team Transformation Program | Turn Dysfunctional Teams into High-Performing Units",
+    title: "Team transformation Program | Turn Dysfunctional Teams into High-Performing Units",
     description: "Team coaching and leadership development program (12 months). In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.",
     url: "https://teamtransformation.com",
-    siteName: "Team Transformation Program",
+    siteName: "Team transformation Program",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Team Transformation Program",
+        alt: "Team transformation Program",
       },
     ],
     locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Team Transformation Program | Turn Dysfunctional Teams into High-Performing Units",
+    title: "Team transformation Program | Turn Dysfunctional Teams into High-Performing Units",
     description: "In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.",
     images: ["/og-image.jpg"],
   },

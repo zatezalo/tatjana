@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Users className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-foreground">Team Transform</span>
+              <span className="text-foreground">Tatjana Team Transformer</span>
             </Link>
             <p className="text-muted-foreground text-sm">
               Transforming dysfunctional teams into high-performing units through proven coaching and development programs.

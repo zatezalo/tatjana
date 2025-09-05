@@ -3,7 +3,7 @@ import { offer } from "@/lib/offer";
 
 export default function DreamOutcome() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 to-primary/10">
+    <section id="dream" className="py-20 bg-gradient-to-br from-primary/5 to-primary/10">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

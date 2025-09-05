@@ -3,7 +3,7 @@ import { offer } from "@/lib/offer";
 
 export default function Pain() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="pain" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -39,7 +39,7 @@ export default function Pain() {
 
         <div className="text-center mt-12">
           <p className="text-lg text-muted-foreground">
-            <strong className="text-foreground">Don't let these issues continue to drain your team's potential.</strong>
+            <strong className="text-foreground">Don&apos;t let these issues continue to drain your team&apos;s potential.</strong>
           </p>
         </div>
       </div>

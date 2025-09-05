@@ -1,6 +1,6 @@
-# Team Transformation Program Landing Site
+# Team transformation Program Landing Site
 
-A complete Next.js 14 landing site for the Team Transformation Program, built with TypeScript, Tailwind CSS, and shadcn/ui.
+A complete Next.js 14 landing site for the Team transformation Program, built with TypeScript, Tailwind CSS, and shadcn/ui.
 
 ## Features
 
