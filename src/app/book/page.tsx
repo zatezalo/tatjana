@@ -20,7 +20,7 @@ export default function BookPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Booking Widget */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 w-full">
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -28,21 +28,16 @@ export default function BookPage() {
                     Schedule Your Call
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  {/* Placeholder for Calendly/Google Calendar embed */}
-                  <div className="bg-muted/30 rounded-lg p-12 text-center border-2 border-dashed border-primary/20">
-                    <Calendar className="w-16 h-16 text-primary/40 mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      Scheduling Widget
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Replace this placeholder with your Calendly, Google Calendar, or other scheduling widget.
-                    </p>
-                    <div className="bg-background p-4 rounded-lg border">
-                      <code className="text-sm text-muted-foreground">
-                        &lt;iframe src="https://calendly.com/your-username" width="100%" height="600"&gt;&lt;/iframe&gt;
-                      </code>
-                    </div>
+                <CardContent className="w-full">
+                  {/* Calendly iframe */}
+                  <div className="w-full">
+                    <iframe
+                      src="https://calendly.com/zatezalo123/30min"
+                      width="100%"
+                      height="600"
+                      title="Schedule a meeting"
+                      className="rounded-lg"
+                    ></iframe>
                   </div>
                 </CardContent>
               </Card>
