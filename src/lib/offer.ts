@@ -88,7 +88,8 @@ export const offer = {
     },
   },
   guarantee: {
-    text: "Either your team transforms into a high-performing unit — or we'll give you clear advice on who to change. Either way, you win.",
+    text: "If your team doesn't performe 50% better in 12 months we will give you clear advice on who to replace or refund you.",
+    text2: "Pays for itself through retained talent, faster delivery, and new strategic initiatives you finally have time to pursue.",
   },
   finalCta: {
     title: "Ready to Transform Your Team?",
