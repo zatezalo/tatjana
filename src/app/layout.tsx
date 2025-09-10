@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import LanguageLayout from "@/components/LanguageLayout";
 
 export const metadata: Metadata = {
   title: "Team transformation Program | Turn Dysfunctional Teams into High-Performing Units",
@@ -62,9 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <LanguageLayout>{children}</LanguageLayout>
       </body>
     </html>
   );

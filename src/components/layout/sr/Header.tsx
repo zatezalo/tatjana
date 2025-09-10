@@ -12,35 +12,35 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
+          <Link href="/sr" className="flex items-center gap-2 font-bold text-xl">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <Users className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-foreground">Tatjana Team Transformer</span>
+            <span className="text-foreground">Tatjana Tim Transformer</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <Link href="#pain" className="text-muted-foreground hover:text-foreground transition-colors">
-              Problems
+              Problemi
             </Link>
             <Link href="#dream" className="text-muted-foreground hover:text-foreground transition-colors">
-              Solutions
+              Rešenja
             </Link>
             <Link href="#timeline" className="text-muted-foreground hover:text-foreground transition-colors">
-              Process
+              Proces
             </Link>
             <Link href="#case-studies" className="text-muted-foreground hover:text-foreground transition-colors">
-              Results
+              Rezultati
             </Link>
             <Link href="#value" className="text-muted-foreground hover:text-foreground transition-colors">
-              Pricing
+              Cene
             </Link>
-            <Link href="/sr" className="text-muted-foreground hover:text-foreground transition-colors">
-              SR
+            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+              EN
             </Link>
             <Button asChild>
-              <Link href="/book">Book Consultation</Link>
+              <Link href="/sr/book">Zakazite konsultaciju</Link>
             </Button>
           </nav>
 
@@ -64,47 +64,47 @@ export default function Header() {
                 className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Problems
+                Problemi
               </Link>
               <Link 
                 href="#dream" 
                 className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Solutions
+                Rešenja
               </Link>
               <Link 
                 href="#timeline" 
                 className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Process
+                Proces
               </Link>
               <Link 
                 href="#case-studies" 
                 className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Results
+                Rezultati
               </Link>
               <Link 
                 href="#value" 
                 className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Pricing
+                Cene
               </Link>
               <Link 
-                href="/sr" 
+                href="/" 
                 className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                SR
+                EN
               </Link>
               <div className="px-4 pt-2">
                 <Button asChild className="w-full">
-                  <Link href="/book" onClick={() => setIsMenuOpen(false)}>
-                    Book Consultation
+                  <Link href="/sr/book" onClick={() => setIsMenuOpen(false)}>
+                    Zakazite konsultaciju
                   </Link>
                 </Button>
               </div>
