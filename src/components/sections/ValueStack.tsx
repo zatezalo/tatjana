@@ -85,15 +85,15 @@ export default function ValueStack() {
                   </p>
                   <div className="space-y-3 mb-4">
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Save €4,000 vs flexible plan (25% off)
+                      Save €6,000 vs flexible plan (37.5% off)
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Save €18,950 vs itemized value (
+                      Save €20,950 vs itemized value (
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
                       Add extra person: {offer.valueStack.investment.addOn}{" "}
-                      (default team size is 4)
+                      <br />(default team size is 4)
                     </div>
                   </div>
                   {/* <div className="text-xs text-foreground space-y-1">
@@ -123,7 +123,7 @@ export default function ValueStack() {
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Add extra person: €3,000 (default team size is 4)
+                      Add extra person: €3,000 each <br />(default team size is 4)
                     </div>
                   </div>
                 </div>
