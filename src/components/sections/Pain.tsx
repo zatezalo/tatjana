@@ -9,7 +9,7 @@ export default function Pain() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {offer.pain.title}
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-foreground">
             {offer.pain.subheadline}
           </p>
         </div>
@@ -24,7 +24,7 @@ export default function Pain() {
             return (
               <div
                 key={index}
-                className={`flex items-start gap-4 p-6 bg-background rounded-lg border border-destructive/20 hover:border-destructive/40 transition-colors ${
+                className={`flex items-center gap-4 p-6 bg-background rounded-lg border border-destructive/20 hover:border-destructive/40 transition-colors ${
                   isLastItem && isOddCount ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''
                 }`}
               >

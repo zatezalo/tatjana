@@ -63,7 +63,7 @@ export default function FinalCTA() {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {offer.finalCta.title}
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-foreground">
               {offer.finalCta.subtitle}
             </p>
           </div>
@@ -273,7 +273,7 @@ export default function FinalCTA() {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Ready to Get Started?
               </h3>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-foreground mb-6">
                 Skip the form and book your free consultation directly
               </p>
               <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">

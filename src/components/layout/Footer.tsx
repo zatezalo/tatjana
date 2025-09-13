@@ -14,7 +14,7 @@ export default function Footer() {
               </div>
               <span className="text-foreground">Tatjana Team Transformer</span>
             </Link>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-foreground text-sm">
             Transforming dysfunctional teams into high-performing ones through proven coaching and development programs.
             </p>
           </div>
@@ -24,27 +24,27 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#pain" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#pain" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Team Problems
                 </Link>
               </li>
               <li>
-                <Link href="#dream" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#dream" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Solutions
                 </Link>
               </li>
               <li>
-                <Link href="#timeline" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#timeline" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Our Process
                 </Link>
               </li>
               <li>
-                <Link href="#case-studies" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#case-studies" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="#value" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#value" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Pricing
                 </Link>
               </li>
@@ -56,17 +56,17 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Program</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/book" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="/book" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Book Consultation
                 </Link>
               </li>
               <li>
-                <Link href="#guarantee" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#guarantee" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Our Guarantee
                 </Link>
               </li>
               <li>
-                <Link href="#cta" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#cta" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Get Started
                 </Link>
               </li>
@@ -77,15 +77,15 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2 text-sm text-foreground">
                 <Mail className="w-4 h-4" />
-                hello@teamtransform.com
+                Tanja@hrcontact.rs
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2 text-sm text-foreground">
                 <Phone className="w-4 h-4" />
-                +1 (555) 123-4567
+                +381 60 4121304 
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2 text-sm text-foreground">
                 <MapPin className="w-4 h-4" />
                 Remote & On-site
               </li>
@@ -94,14 +94,14 @@ export default function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-foreground">
             © 2024 Team Transform. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/privacy" className="text-sm text-foreground hover:text-foreground transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/terms" className="text-sm text-foreground hover:text-foreground transition-colors">
               Terms of Service
             </Link>
           </div>

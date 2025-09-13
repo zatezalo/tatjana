@@ -107,16 +107,20 @@ export default function ValueStack() {
                 {/* Installment Option */}
                 <div className="text-center p-6 bg-gradient-to-br from-muted/30 to-muted/10 rounded-lg border-2 border-muted/50 hover:border-muted transition-colors">
                   <div className="flex items-center justify-center gap-2 mb-2">
-                    <span className="text-4xl font-bold text-foreground">
+                    <span className="text-4xl font-bold text-primary ">
                       {offer.valueStack.investment.installments}
                     </span>
                   </div>
-                  <p className="text-sm text-foreground mb-4">
+                  <p className="text-sm text-foreground mb-4 font-medium">
                     Flexible Payment Plan
                   </p>
                   <div className="space-y-3 mb-4">
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
                       {offer.valueStack.investment.installmentBreakdown}
+                    </div>
+                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                      Save €14,950 vs itemized value (
+                      {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
                       Add extra person: €3,000 (default team size is 4)
@@ -138,7 +142,7 @@ export default function ValueStack() {
                 </div> */}
 
                 <div>
-                  <Button asChild className="w-full mb-2" size="lg">
+                  <Button asChild className="w-full mb-2 text-3xl px-8 py-6 h-auto" size="lg">
                     <Link href="/book">Book Your Free Consultation</Link>
                   </Button>
                   <div className="text-center">
