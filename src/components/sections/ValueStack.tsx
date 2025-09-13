@@ -142,7 +142,7 @@ export default function ValueStack() {
                     <Link href="/book">Book Your Free Consultation</Link>
                   </Button>
                   <div className="text-center">
-                    <Badge className="text-lg px-4 py-2 bg-[#FFF4E5] text-[#D35400] border border-[#FF9800] hover:bg-[#FF9800] hover:text-[#FFF4E5] hover:cursor-default">
+                    <Badge className="text-lg px-4 py-2 bg-[#FFF4E5] text-[#D35400] border border-[#FF9800] hover:bg-[#FFF4E5] hover:cursor-default">
                       3 more spots available for this pricing
                     </Badge>
                   </div>
