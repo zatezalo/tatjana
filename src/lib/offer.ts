@@ -99,7 +99,7 @@ export const offer = {
     items: [
       { name: "38 Individual Coaching Sessions", value: "€7,600" },
       { name: "11 Team Coaching Sessions", value: "€4,400" },
-      { name: "7 Workshops", value: "€4,550" },
+      { name: "7 Workshops", value: "€5,550" },
       { name: "Assessments (SDI, Lencioni, Inspire)", value: "€3,000" },
       { name: "Personalized educational materials and exercises", value: "€3,200" },
       { name: "Mentorship + e-mail and offline support (up to 3h per month)", value: "€7,200" },
