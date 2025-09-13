@@ -15,7 +15,7 @@ export const offer = {
       "You are always expected to find solutions when team members come with problems - team proactiveness is lacking.",
       "You end up driving decisions and taking end-to-end accountability - you have a talented team, yet weak individual ownership.",
     ],
-    conclusion: "If this feels like your daily reality - you don’t have a bad business, you have a team problem. And it’s solvable.",
+    conclusion: "If this feels like your daily reality, you have a team problem, and it’s solvable.",
   },
   dream: {
     title: "What Leading Your Team Will Finally Feel Like",
