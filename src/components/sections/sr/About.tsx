@@ -33,7 +33,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <div className="space-y-4 text-foreground leading-relaxed">
                 <p>
                   Više od 20 godina rešava najčešći
                   problem menadžmenta: pametni timovi koji ne performiraju.

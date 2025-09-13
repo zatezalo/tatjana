@@ -43,7 +43,7 @@ export default function ProgramTimeline() {
                     {phase.title}
                   </h3>
 
-                  <div className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  <div className="text-base md:text-lg text-foreground leading-relaxed">
                     <div>
                       <span className="font-bold">What you get:</span>
                       <br />

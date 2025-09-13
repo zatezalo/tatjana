@@ -35,7 +35,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <div className="space-y-4 text-foreground leading-relaxed">
                 <p>
                   For 20+ years she&apos;s been fixing the most common
                   management problem: smart teams that don&apos;t perform.

@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
             Za 90 dana, vidite vidljiva poboljšanja. Za 12 meseci, vaš tim
             postaje motivisana, samoupravljajuća snaga koja isporučuje na vreme,
             stvara nove prihode i omogućava vašoj energiji da ide tamo gde je potrebna.
