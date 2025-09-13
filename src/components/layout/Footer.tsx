@@ -38,11 +38,11 @@ export default function Footer() {
                   Our Process
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#case-studies" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Case Studies
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="#value" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Pricing
@@ -60,14 +60,14 @@ export default function Footer() {
                   Book Consultation
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#guarantee" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Our Guarantee
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="#cta" className="text-foreground hover:text-foreground transition-colors text-sm">
-                  Get Started
+                  Submit an inquiry
                 </Link>
               </li>
             </ul>
@@ -79,15 +79,15 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Mail className="w-4 h-4" />
-                Tanja@hrcontact.rs
+                <a href="mailto:tanja@hrcentar.rs">tanja@hrcentar.rs</a>
               </li>
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Phone className="w-4 h-4" />
-                +381 60 4121304 
+                <a href="tel:+381604121304">+381 60 4121304</a>
               </li>
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <MapPin className="w-4 h-4" />
-                Remote & On-site
+                Remote & In-person
               </li>
             </ul>
           </div>

@@ -258,12 +258,6 @@ export default function FinalCTA() {
                   </div>
                 </CardContent>
               </Card>
-
-              <div className="text-center">
-                <Badge variant="secondary" className="text-lg px-4 py-2">
-                  3 spots available
-                </Badge>
-              </div>
             </div>
           </div>
 
