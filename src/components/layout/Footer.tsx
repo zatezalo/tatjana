@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="text-foreground">Tatjana Team Transformer</span>
             </Link>
             <p className="text-muted-foreground text-sm">
-              Transforming dysfunctional teams into high-performing units through proven coaching and development programs.
+            Transforming dysfunctional teams into high-performing ones through proven coaching and development programs.
             </p>
           </div>
 

@@ -11,14 +11,16 @@ export default function About() {
               <div className="aspect-square relative rounded-lg overflow-hidden bg-muted">
                 {/* Placeholder for Tatjana&apos;s photo - you can replace this with actual image */}
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40 flex items-center justify-center">
-                  <span className="text-muted-foreground text-lg">Tatjana&apos;s Photo</span>
+                  <span className="text-muted-foreground text-lg">
+                    Tatjana&apos;s Photo
+                  </span>
                 </div>
                 <Image
                   src="/about.jpeg"
                   alt="Tatjana - CEO of HR Centar"
                   fill
                   className="object-cover"
-                />               
+                />
               </div>
             </div>
 
@@ -35,21 +37,33 @@ export default function About() {
 
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  For 20+ years she&apos;s been fixing the same founder problem: smart teams that don&apos;t perform. 
-                  Tatjana has trained and coached leaders in 100+ companies, from fast-growing SMEs to 
-                  enterprise giants. Her programs consistently turn dysfunctional teams into high-performing 
-                  units that deliver 50% more output within 12 months.
+                  For 20+ years she&apos;s been fixing the most common
+                  management problem: smart teams that don&apos;t perform.
+                  Tatjana has trained and coached leaders in 100+ companies,
+                  from fast-growing SMEs to enterprise giants. Her programs
+                  consistently turn dysfunctional teams into high-performing
+                  ones that deliver 50% more output within 12 months.
                 </p>
 
                 <p>
-                  Certified executive coach (PCC, ICF) and assessor for Inspire, Hogan, and SDI, she combines 
-                  diagnostics, workshops, and 1:1 coaching so results stick. As an accredited EBRD consultant, 
-                  she&apos;s trusted to solve critical growth and leadership challenges for organizations across Europe.
+                  During my 15 years in management roles, I had worked with
+                  great individuals, but the biggest challenge was to achieve
+                  greatness as a team. Most teams never have problems with
+                  numbers, but with relationships - that’s why I want to help
+                  teams achieve their full potential.
                 </p>
 
                 <p className="font-medium text-foreground">
-                  Clients don&apos;t just leave with insights - they leave with teams that finally run without 
-                  micromanagement, produce new revenue initiatives, and deliver projects on time.
+                  Certified executive coach (PCC, ICF), licensed mediator, and
+                  accredited assessor for Inspire, Hogan, and SDI, she combines
+                  diagnostics, workshops, and 1:1 coaching. As an accredited
+                  EBRD consultant, she&apos;s trusted to solve critical growth
+                  and leadership challenges for international organizations.
+                </p>
+                <p className="font-medium text-foreground">
+                  Clients don&apos;t just leave with insights - they leave with
+                  teams that finally run without micromanagement, produce new
+                  revenue initiatives, and deliver projects on time.
                 </p>
               </div>
 
@@ -63,10 +77,13 @@ export default function About() {
                     EBRD Consultant
                   </span>
                   <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Inspire Assessor
+                    Accredited Inspire Assessor
                   </span>
                   <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                     Hogan & SDI Certified
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Licensed Mediator
                   </span>
                 </div>
               </div>

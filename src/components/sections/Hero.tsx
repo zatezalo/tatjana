@@ -18,7 +18,7 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            Double Your Team&apos;s Output in{" "}
+            Double Your Team&apos;s Results in{" "}
             <span className="text-primary block sm:inline">
               12 Months—Without Hiring Anyone New
             </span>
@@ -28,7 +28,7 @@ export default function Hero() {
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
             In 90 days, see visible improvements. In 12 months, your team
             becomes a motivated, self-managing powerhouse that delivers on time,
-            creates new revenue, and stops draining your energy.
+            creates new revenue, and enables your energy to go where it matters.
           </p>
 
           {/* Stats */}
@@ -41,7 +41,7 @@ export default function Hero() {
                 90 Days
               </h3>
               <p className="text-muted-foreground">
-                Visible performance wins, guaranteed
+                Guaranteed visible performance wins
               </p>
             </div>
 
@@ -53,7 +53,7 @@ export default function Hero() {
                 50%+ Output Increase
               </h3>
               <p className="text-muted-foreground">
-                or we tell you exactly who to replace
+                in 3 key areas - communication, collaboration, efficiency
               </p>
             </div>
 

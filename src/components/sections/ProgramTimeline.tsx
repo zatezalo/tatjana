@@ -12,7 +12,7 @@ export default function ProgramTimeline() {
             {offer.timeline.title}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground">
-            First wins in 90 days. Self-managing team in 12 months.
+            First wins in 90 days. Top-performing team in 12 months.
           </p>
         </div>
 
@@ -44,15 +44,21 @@ export default function ProgramTimeline() {
                   </h3>
 
                   <div className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    <div className="mb-2">
-                      <span className="font-bold">How we work:</span>
-                      <br />
-                      {phase.description.split('. What you get:')[0].replace('How we work: ', '')}
-                    </div>
                     <div>
                       <span className="font-bold">What you get:</span>
                       <br />
-                      {phase.description.split('. What you get:')[1]}
+                      {phase.description.whatYouGet}
+                    </div>
+                    <div className="mb-2">
+                      <span className="font-bold">How we work:</span>
+                      <br />
+                      {phase.description.howWeWork}
+                    </div>
+
+                    <div>
+                      <span className="font-bold">Results:</span>
+                      <br />
+                      {phase.description.results}
                     </div>
                   </div>
 
@@ -62,11 +68,15 @@ export default function ProgramTimeline() {
                       <>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Individual Assessments</span>
+                          <span className="whitespace-nowrap">
+                            Individual Assessments
+                          </span>
                         </div>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Goal Setting</span>
+                          <span className="whitespace-nowrap">
+                            Goal Setting
+                          </span>
                         </div>
                       </>
                     )}
@@ -74,11 +84,15 @@ export default function ProgramTimeline() {
                       <>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Team Workshops</span>
+                          <span className="whitespace-nowrap">
+                            Team Workshops
+                          </span>
                         </div>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Skill Building</span>
+                          <span className="whitespace-nowrap">
+                            Skill Building
+                          </span>
                         </div>
                       </>
                     )}
@@ -86,11 +100,15 @@ export default function ProgramTimeline() {
                       <>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Performance Tracking</span>
+                          <span className="whitespace-nowrap">
+                            Performance Tracking
+                          </span>
                         </div>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Continuous Improvement</span>
+                          <span className="whitespace-nowrap">
+                            Continuous Improvement
+                          </span>
                         </div>
                       </>
                     )}
@@ -104,23 +122,41 @@ export default function ProgramTimeline() {
         {/* Program Totals */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-muted/30 from-primary/5 to-primary/10 rounded-xl p-4 md:p-8 border border-primary/10 mb-6 md:mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6 md:mb-8 text-center">Program Totals</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6 md:mb-8 text-center">
+              Included
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.oneOnOne}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Individual Sessions</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.oneOnOne}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Individual Sessions
+                </div>
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.group}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Group Sessions</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.group}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Group Sessions
+                </div>
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.workshops}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Workshops</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.workshops}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Workshops
+                </div>
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.assessments}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Assessments</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.assessments}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Assessments
+                </div>
               </div>
             </div>
           </div>
@@ -136,7 +172,11 @@ export default function ProgramTimeline() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button asChild size="lg" className="text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto w-full sm:w-auto">
+          <Button
+            asChild
+            size="lg"
+            className="text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto w-full sm:w-auto"
+          >
             <Link href="/book"> {offer.timeline.cta} </Link>
           </Button>
         </div>

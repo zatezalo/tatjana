@@ -1,4 +1,4 @@
-import { X, AlertTriangle, Clock, Users, Target } from "lucide-react";
+import { X, AlertTriangle, Clock, Users, Target, Zap } from "lucide-react";
 import { offer } from "@/lib/offer";
 
 export default function Pain() {
@@ -16,7 +16,7 @@ export default function Pain() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {offer.pain.bullets.map((bullet, index) => {
-            const icons = [X, AlertTriangle, Clock, Users, Target];
+            const icons = [Clock, AlertTriangle, X, Target, Users, Zap];
             const Icon = icons[index];
             const isLastItem = index === offer.pain.bullets.length - 1;
             const isOddCount = offer.pain.bullets.length % 2 === 1;
@@ -42,7 +42,7 @@ export default function Pain() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-lg text-muted-foreground">
+          <p className="text-xl text-muted-foreground">
             <strong className="text-foreground">{offer.pain.conclusion}</strong>
           </p>
         </div>

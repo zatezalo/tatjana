@@ -254,14 +254,14 @@ export default function FinalCTA() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-foreground">Money-back guarantee</span>
+                    <span className="text-sm text-foreground">No positive outcomes - money-back guarantee</span>
                   </div>
                 </CardContent>
               </Card>
 
               <div className="text-center">
                 <Badge variant="secondary" className="text-lg px-4 py-2">
-                  Limited spots available
+                  3 spots available
                 </Badge>
               </div>
             </div>

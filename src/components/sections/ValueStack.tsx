@@ -95,7 +95,7 @@ export default function ValueStack() {
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Add extra seat: {offer.valueStack.investment.addOn}{" "}
+                      Add extra person: {offer.valueStack.investment.addOn}{" "}
                       (default team size is 4)
                     </div>
                   </div>
