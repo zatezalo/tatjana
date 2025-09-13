@@ -180,8 +180,8 @@ export default function ProgramTimeline() {
 
         {/* Promise */}
         <div className="text-center mb-6 md:mb-8">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-medium">
-            <CheckCircle className="w-4 h-4 md:w-5 md:h-5" />
+          <div className="inline-flex items-center gap-3 bg-primary/10 text-primary px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-medium">
+            <CheckCircle className="w-12 h-12 md:w-5 md:h-5" />
             <span className="text-center">{offer.timeline.promise}</span>
           </div>
         </div>
