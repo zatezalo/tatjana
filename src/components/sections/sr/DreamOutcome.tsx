@@ -9,7 +9,7 @@ export default function DreamOutcome() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {offer.dream.title}
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-foreground">
             {offer.dream.subheadline}
           </p>
         </div>

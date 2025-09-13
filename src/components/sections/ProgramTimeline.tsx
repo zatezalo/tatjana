@@ -11,7 +11,7 @@ export default function ProgramTimeline() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
             {offer.timeline.title}
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground">
+          <p className="text-lg md:text-xl text-foreground">
             First wins in 90 days. Top-performing team in 12 months.
           </p>
         </div>
@@ -66,13 +66,13 @@ export default function ProgramTimeline() {
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 mt-4 md:mt-6">
                     {index === 0 && (
                       <>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">
                             Individual Assessments
                           </span>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">
                             Goal Setting
@@ -82,13 +82,13 @@ export default function ProgramTimeline() {
                     )}
                     {index === 1 && (
                       <>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">
                             Team Workshops
                           </span>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">
                             Skill Building
@@ -98,13 +98,13 @@ export default function ProgramTimeline() {
                     )}
                     {index === 2 && (
                       <>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">
                             Performance Tracking
                           </span>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">
                             Continuous Improvement

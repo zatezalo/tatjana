@@ -36,7 +36,7 @@ export default function About() {
               </div>
 
               <div className="space-y-4 text-foreground leading-relaxed">
-                <p>
+                <p className="font-medium text-foreground">
                   For 20+ years she&apos;s been fixing the most common
                   management problem: smart teams that don&apos;t perform.
                   Tatjana has trained and coached leaders in 100+ companies,
@@ -45,7 +45,7 @@ export default function About() {
                   ones that deliver 50% more output within 12 months.
                 </p>
 
-                <p>
+                <p className="font-medium text-foreground">
                   During my 15 years in management roles, I had worked with
                   great individuals, but the biggest challenge was to achieve
                   greatness as a team. Most teams never have problems with

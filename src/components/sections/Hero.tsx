@@ -40,7 +40,7 @@ export default function Hero() {
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 90 Days
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-foreground">
                 Guaranteed visible performance wins
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function Hero() {
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 50%+ Output Increase
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-foreground">
                 in 3 key areas - communication, collaboration, efficiency
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function Hero() {
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 3-10x ROI
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-foreground">
                 program pays for itself in savings + new initiatives
               </p>
             </div>

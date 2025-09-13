@@ -18,7 +18,7 @@ export default function ValueStack() {
               {offer.valueStack.title}
             </h2>
 
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-foreground">
               {offer.valueStack.subheadline}
             </p>
           </div>
@@ -48,10 +48,7 @@ export default function ValueStack() {
                   <div className="flex flex-col gap-6 text-center">
                     <div className="bg-background p-4 rounded-lg border border-primary/10">
                       <div className="text-2xl font-bold text-primary mb-2">
-                        €30,950
-                      </div>
-                      <div className="text-sm text-muted-foreground">
-                        Total Value
+                        Total Value: €30,950
                       </div>
                     </div>
                   </div>
