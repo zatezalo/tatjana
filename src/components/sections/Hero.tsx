@@ -17,7 +17,7 @@ export default function Hero() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
             Double Your Team&apos;s Results in{" "}
             <span className="text-primary block sm:inline">
               12 Months-Without Hiring Anyone New

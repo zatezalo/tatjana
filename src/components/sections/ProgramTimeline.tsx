@@ -130,33 +130,49 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.oneOnOne}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
                   Individual Sessions
-                </div>
+                </div> */}
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.group}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
                   Group Sessions
-                </div>
+                </div> */}
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.workshops}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
                   Workshops
-                </div>
+                </div> */}
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.assessments}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
                   Assessments
+                </div> */}
+              </div>
+              <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.offlineSupport}
                 </div>
+                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Assessments
+                </div> */}
+              </div>
+              <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.excercises}
+                </div>
+                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Assessments
+                </div> */}
               </div>
             </div>
           </div>

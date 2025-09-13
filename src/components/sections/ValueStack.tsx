@@ -45,7 +45,7 @@ export default function ValueStack() {
               {/* Value Summary */}
               <div className="text-center">
                 <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8 max-w-4xl mx-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div className="flex flex-col gap-6 text-center">
                     <div className="bg-background p-4 rounded-lg border border-primary/10">
                       <div className="text-2xl font-bold text-primary mb-2">
                         €30,950
