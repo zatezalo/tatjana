@@ -80,7 +80,7 @@ export default function ValueStack() {
                       {offer.valueStack.investment.upfront}
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4 font-medium">
+                  <p className="text-sm text-foreground mb-4 font-medium">
                     Pay-In-Full
                   </p>
                   <div className="space-y-3 mb-4">
@@ -96,7 +96,7 @@ export default function ValueStack() {
                       (default team size is 4)
                     </div>
                   </div>
-                  <div className="text-xs text-muted-foreground space-y-1">
+                  <div className="text-xs text-foreground space-y-1">
                     <p className="italic">
                       Why? Speed + commitment = results. That&apos;s why PIF is
                       heavily discounted.
@@ -122,12 +122,6 @@ export default function ValueStack() {
                       Add extra person: €3,000 (default team size is 4)
                     </div>
                   </div>
-                  <div className="text-xs text-muted-foreground space-y-1">
-                    <p className="italic">
-                      This is launch pricing. The next cohort increases. Lock
-                      your spot now.
-                    </p>
-                  </div>
                 </div>
 
                 {/* Add-on Option */}
@@ -142,6 +136,11 @@ export default function ValueStack() {
                     Additional team members
                   </p>
                 </div> */}
+                <div className="text-center">
+                  <Badge variant="secondary" className="text-lg px-4 py-2">
+                    3 more spots available for this pricing
+                  </Badge>
+                </div>
 
                 <div className="pt-4">
                   <Button asChild className="w-full" size="lg">
