@@ -96,12 +96,12 @@ export default function ValueStack() {
                       (default team size is 4)
                     </div>
                   </div>
-                  <div className="text-xs text-foreground space-y-1">
+                  {/* <div className="text-xs text-foreground space-y-1">
                     <p className="italic">
                       Why? Speed + commitment = results. That&apos;s why PIF is
                       heavily discounted.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Installment Option */}
@@ -111,7 +111,7 @@ export default function ValueStack() {
                       {offer.valueStack.investment.installments}
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-foreground mb-4">
                     Flexible Payment Plan
                   </p>
                   <div className="space-y-3 mb-4">
@@ -136,16 +136,16 @@ export default function ValueStack() {
                     Additional team members
                   </p>
                 </div> */}
-                <div className="text-center">
-                  <Badge variant="secondary" className="text-lg px-4 py-2">
-                    3 more spots available for this pricing
-                  </Badge>
-                </div>
 
-                <div className="pt-4">
-                  <Button asChild className="w-full" size="lg">
+                <div>
+                  <Button asChild className="w-full mb-2" size="lg">
                     <Link href="/book">Book Your Free Consultation</Link>
                   </Button>
+                  <div className="text-center">
+                    <Badge className="text-lg px-4 py-2 bg-[#FFF4E5] text-[#D35400] border border-[#FF9800] hover:bg-[#FF9800] hover:text-[#FFF4E5] hover:cursor-default">
+                      3 more spots available for this pricing
+                    </Badge>
+                  </div>
                 </div>
               </CardContent>
             </Card>
