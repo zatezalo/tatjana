@@ -34,17 +34,29 @@ export const offer = {
       {
         period: "Faza 1 · Meseci 1–3",
         title: "Dobijte jasnoću i zamah",
-        description: "Kako radimo: 17 1na1 sesija, 2 grupne sesije, 4 radionice, 3 procene. Šta dobijate: pravu osnovu, jasne uloge, delegiranje koje se drži.",
+        description: {
+          whatYouGet: "pravu osnovu, jasne uloge, delegiranje koje se drži",
+          howWeWork: "17 1na1 sesija, 2 grupne sesije, 4 radionice, 3 procene",
+          results: "jasne uloge, delegiranje koje se drži, osnovni sistemi na mestu"
+        }
       },
       {
         period: "Faza 2 · Meseci 4–6",
         title: "Napravite da se sistemi drže",
-        description: "Kako radimo: 15 1na1 sesija, 3 grupne sesije, 3 radionice. Šta dobijate: ritam planiranja, kulturu povratnih informacija, ocene performansi koje pokreću ponašanje.",
+        description: {
+          whatYouGet: "ritam planiranja, kulturu povratnih informacija, ocene performansi koje pokreću ponašanje",
+          howWeWork: "15 1na1 sesija, 3 grupne sesije, 3 radionice",
+          results: "sistemi koji se drže, poboljšana komunikacija, jasni ciljevi"
+        }
       },
       {
         period: "Faza 3 · Meseci 7–12",
         title: "Radi na vlasništvu",
-        description: "Kako radimo: 6 1na1 sesija, 6 grupnih sesija. Šta dobijate: samoispravljanje, osnivač se vraća na strategiju, pouzdanu isporuku, kontinuirano poboljšanje, nezavisan visokoproduktivan tim.",
+        description: {
+          whatYouGet: "samoispravljanje, osnivač se vraća na strategiju, pouzdanu isporuku, kontinuirano poboljšanje, nezavisan visokoproduktivan tim",
+          howWeWork: "6 1na1 sesija, 6 grupnih sesija",
+          results: "samoupravljajući tim, kontinuirano poboljšanje, visokoproduktivnost"
+        }
       },
     ],
     totals: {

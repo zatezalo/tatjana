@@ -35,21 +35,33 @@ export default function About() {
 
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Više od 20 godina rešava isti problem osnivača: pametni timovi koji ne performiraju. 
-                  Tatjana je obučavala i kočirala lidere u preko 100 kompanija, od brzorastućih SME-ova do 
-                  korporativnih divova. Njeni programi konzistentno pretvaraju disfunkcionalne timove u visokoproduktivne 
+                  Više od 20 godina rešava najčešći
+                  problem menadžmenta: pametni timovi koji ne performiraju.
+                  Tatjana je obučavala i kočirala lidere u preko 100 kompanija,
+                  od brzorastućih SME-ova do korporativnih divova. Njeni programi
+                  konzistentno pretvaraju disfunkcionalne timove u visokoproduktivne
                   jedinice koje isporučuju 50% više izlaza za 12 meseci.
                 </p>
 
                 <p>
-                  Certifikovani izvršni koč (PCC, ICF) i procenjivač za Inspire, Hogan i SDI, kombinuje 
-                  dijagnostiku, radionice i 1:1 kočing tako da se rezultati drže. Kao akreditovani EBRD konsultant, 
-                  pouzdana je za rešavanje kritičnih izazova rasta i liderstva za organizacije širom Evrope.
+                  Tokom mojih 15 godina u menadžerskim ulogama, radila sam sa
+                  odličnim pojedincima, ali najveći izazov je bio da postignemo
+                  veličinu kao tim. Većina timova nikad nema probleme sa
+                  brojevima, već sa odnosima - zato želim da pomognem
+                  timovima da dostignu svoj puni potencijal.
                 </p>
 
                 <p className="font-medium text-foreground">
-                  Klijenti ne odlaze samo sa uvidima - odlaze sa timovima koji konačno rade bez 
-                  mikromenadžmenta, proizvode nove prihodne inicijative i isporučuju projekte na vreme.
+                  Certifikovani izvršni koč (PCC, ICF), licencirani mediator i
+                  akreditovani procenjivač za Inspire, Hogan i SDI, kombinuje
+                  dijagnostiku, radionice i 1:1 kočing. Kao akreditovani
+                  EBRD konsultant, pouzdana je za rešavanje kritičnih izazova
+                  rasta i liderstva za međunarodne organizacije.
+                </p>
+                <p className="font-medium text-foreground">
+                  Klijenti ne odlaze samo sa uvidima - odlaze sa
+                  timovima koji konačno rade bez mikromenadžmenta, proizvode nove
+                  prihodne inicijative i isporučuju projekte na vreme.
                 </p>
               </div>
 
@@ -63,10 +75,13 @@ export default function About() {
                     EBRD Konsultant
                   </span>
                   <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Inspire Procenjivač
+                    Akreditovani Inspire Procenjivač
                   </span>
                   <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                     Hogan & SDI Certifikovano
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Licencirani Mediator
                   </span>
                 </div>
               </div>

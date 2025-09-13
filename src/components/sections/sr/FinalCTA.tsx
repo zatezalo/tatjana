@@ -254,14 +254,14 @@ export default function FinalCTA() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-foreground">Garantija povraćaja novca</span>
+                    <span className="text-sm text-foreground">Nema pozitivnih rezultata - garantija povraćaja novca</span>
                   </div>
                 </CardContent>
               </Card>
 
               <div className="text-center">
                 <Badge variant="secondary" className="text-lg px-4 py-2">
-                  Ograničen broj mesta
+                  3 mesta dostupna
                 </Badge>
               </div>
             </div>

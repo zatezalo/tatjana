@@ -18,9 +18,9 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            Udvostručite izlaz vašeg tima za{" "}
+            Udvostručite rezultate vašeg tima za{" "}
             <span className="text-primary block sm:inline">
-              12 meseci—bez zapošljavanja novih ljudi
+              12 meseci-bez zapošljavanja novih ljudi
             </span>
           </h1>
 
@@ -28,7 +28,7 @@ export default function Hero() {
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
             Za 90 dana, vidite vidljiva poboljšanja. Za 12 meseci, vaš tim
             postaje motivisana, samoupravljajuća snaga koja isporučuje na vreme,
-            stvara nove prihode i prestaje da vam troši energiju.
+            stvara nove prihode i omogućava vašoj energiji da ide tamo gde je potrebna.
           </p>
 
           {/* Stats */}
@@ -41,7 +41,7 @@ export default function Hero() {
                 90 dana
               </h3>
               <p className="text-muted-foreground">
-                Vidljive performanse pobede, garantovano
+                Garantovane vidljive performanse pobede
               </p>
             </div>
 
@@ -53,7 +53,7 @@ export default function Hero() {
                 50%+ povećanje izlaza
               </h3>
               <p className="text-muted-foreground">
-                ili vam kažemo tačno koga da zamenite
+                u 3 ključne oblasti - komunikacija, saradnja, efikasnost
               </p>
             </div>
 

@@ -12,7 +12,7 @@ export default function ProgramTimeline() {
             {offer.timeline.title}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground">
-            Prve pobede za 90 dana. Samoupravljajući tim za 12 meseci.
+            Prve pobede za 90 dana. Vrhunski performirajući tim za 12 meseci.
           </p>
         </div>
 
@@ -44,15 +44,21 @@ export default function ProgramTimeline() {
                   </h3>
 
                   <div className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    <div className="mb-2">
-                      <span className="font-bold">Kako radimo:</span>
-                      <br />
-                      {phase.description.split('. Šta dobijate:')[0].replace('Kako radimo: ', '')}
-                    </div>
                     <div>
                       <span className="font-bold">Šta dobijate:</span>
                       <br />
-                      {phase.description.split('. Šta dobijate:')[1]}
+                      {phase.description.whatYouGet}
+                    </div>
+                    <div className="mb-2">
+                      <span className="font-bold">Kako radimo:</span>
+                      <br />
+                      {phase.description.howWeWork}
+                    </div>
+
+                    <div>
+                      <span className="font-bold">Rezultati:</span>
+                      <br />
+                      {phase.description.results}
                     </div>
                   </div>
 
@@ -104,23 +110,41 @@ export default function ProgramTimeline() {
         {/* Program Totals */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-muted/30 from-primary/5 to-primary/10 rounded-xl p-4 md:p-8 border border-primary/10 mb-6 md:mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6 md:mb-8 text-center">Ukupno programa</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6 md:mb-8 text-center">
+              Uključeno
+            </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.oneOnOne}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Individualne sesije</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.oneOnOne}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Individualne sesije
+                </div>
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.group}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Grupne sesije</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.group}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Grupne sesije
+                </div>
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.workshops}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Radionice</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.workshops}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Radionice
+                </div>
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">{offer.timeline.totals.assessments}</div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">Procene</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                  {offer.timeline.totals.assessments}
+                </div>
+                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                  Procene
+                </div>
               </div>
             </div>
           </div>
@@ -136,7 +160,11 @@ export default function ProgramTimeline() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button asChild size="lg" className="text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto w-full sm:w-auto">
+          <Button
+            asChild
+            size="lg"
+            className="text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto w-full sm:w-auto"
+          >
             <Link href="/sr/book"> {offer.timeline.cta} </Link>
           </Button>
         </div>
