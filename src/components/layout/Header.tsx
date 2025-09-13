@@ -30,8 +30,8 @@ export default function Header() {
             <Link href="#timeline" className="text-foreground hover:text-foreground transition-colors">
               Process
             </Link>
-            <Link href="#case-studies" className="text-foreground hover:text-foreground transition-colors">
-              Results
+            <Link href="#about" className="text-foreground hover:text-foreground transition-colors">
+              About
             </Link>
             <Link href="#value" className="text-foreground hover:text-foreground transition-colors">
               Pricing
@@ -81,11 +81,11 @@ export default function Header() {
                 Process
               </Link>
               <Link 
-                href="#case-studies" 
+                href="#about" 
                 className="text-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Results
+                About
               </Link>
               <Link 
                 href="#value" 
