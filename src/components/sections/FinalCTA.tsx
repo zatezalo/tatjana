@@ -73,7 +73,7 @@ export default function FinalCTA() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Get Started Today</CardTitle>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   Fill out the form and we&apos;ll get back to you within 24 hours.
                 </p>
               </CardHeader>
@@ -82,7 +82,7 @@ export default function FinalCTA() {
                   <div className="text-center py-8">
                     <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
                     <h3 className="text-2xl font-bold text-foreground mb-2">Thank You!</h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-foreground mb-4">
                       We&apos;ve received your information and will contact you within 24 hours.
                     </p>
                     <Button onClick={() => setSubmitStatus("idle")} variant="outline">
@@ -211,7 +211,7 @@ export default function FinalCTA() {
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">Free Consultation</h4>
-                      <p className="text-sm text-muted-foreground">30-minute call to understand your team&apos;s needs</p>
+                      <p className="text-sm text-foreground">30-minute call to understand your team&apos;s needs</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -220,7 +220,7 @@ export default function FinalCTA() {
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">Custom Proposal</h4>
-                      <p className="text-sm text-muted-foreground">Tailored program designed for your specific situation</p>
+                      <p className="text-sm text-foreground">Tailored program designed for your specific situation</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -229,7 +229,7 @@ export default function FinalCTA() {
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">Start Transformation</h4>
-                      <p className="text-sm text-muted-foreground">Begin your 12-month journey to team excellence</p>
+                      <p className="text-sm text-foreground">Begin your 12-month journey to team excellence</p>
                     </div>
                   </div>
                 </CardContent>

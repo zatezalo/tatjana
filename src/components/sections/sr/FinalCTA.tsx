@@ -63,7 +63,7 @@ export default function FinalCTA() {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {offer.finalCta.title}
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-foreground">
               {offer.finalCta.subtitle}
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function FinalCTA() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Počnite danas</CardTitle>
-                <p className="text-muted-foreground">
+                <p className="text-foreground">
                   Popunite formular i javićemo vam se u roku od 24 sata.
                 </p>
               </CardHeader>
@@ -82,7 +82,7 @@ export default function FinalCTA() {
                   <div className="text-center py-8">
                     <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
                     <h3 className="text-2xl font-bold text-foreground mb-2">Hvala vam!</h3>
-                    <p className="text-muted-foreground mb-4">
+                    <p className="text-foreground mb-4">
                       Primili smo vaše informacije i kontaktiraćemo vas u roku od 24 sata.
                     </p>
                     <Button onClick={() => setSubmitStatus("idle")} variant="outline">
@@ -211,7 +211,7 @@ export default function FinalCTA() {
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">Besplatna konsultacija</h4>
-                      <p className="text-sm text-muted-foreground">30-minutni poziv da razumemo potrebe vašeg tima</p>
+                      <p className="text-sm text-foreground">30-minutni poziv da razumemo potrebe vašeg tima</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -220,7 +220,7 @@ export default function FinalCTA() {
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">Prilagođeni predlog</h4>
-                      <p className="text-sm text-muted-foreground">Program prilagođen vašoj specifičnoj situaciji</p>
+                      <p className="text-sm text-foreground">Program prilagođen vašoj specifičnoj situaciji</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -229,7 +229,7 @@ export default function FinalCTA() {
                     </div>
                     <div>
                       <h4 className="font-medium text-foreground">Počnite transformaciju</h4>
-                      <p className="text-sm text-muted-foreground">Započnite svoje 12-mesečno putovanje ka timskoj izvrsnosti</p>
+                      <p className="text-sm text-foreground">Započnite svoje 12-mesečno putovanje ka timskoj izvrsnosti</p>
                     </div>
                   </div>
                 </CardContent>
@@ -273,7 +273,7 @@ export default function FinalCTA() {
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Spremni da počnete?
               </h3>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-foreground mb-6">
                 Preskočite formular i zakazite besplatnu konsultaciju direktno
               </p>
               <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">

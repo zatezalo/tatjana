@@ -19,7 +19,7 @@ export default function Guarantee() {
                 Zeros Risk Guarantee
               </h2>
 
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
                 {offer.guarantee.text}
               </p>
 
@@ -28,7 +28,7 @@ export default function Guarantee() {
                   <div className="text-2xl font-bold text-primary mb-2">
                   €30K - €100K
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-sm text-foreground">
                     Program Value
                   </div>
                 </div>
@@ -36,7 +36,7 @@ export default function Guarantee() {
                   <div className="text-2xl font-bold text-green-600 mb-2">
                     3-10x ROI
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-sm text-foreground">
                     Typical Return
                   </div>
                 </div>
@@ -44,11 +44,11 @@ export default function Guarantee() {
                   <div className="text-2xl font-bold text-primary mb-2">
                     90 Days
                   </div>
-                  <div className="text-sm text-muted-foreground">First Visible Wins</div>
+                  <div className="text-sm text-foreground">First Visible Wins</div>
                 </div>
               </div>
 
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
                 {offer.guarantee.text2}
               </p>
 

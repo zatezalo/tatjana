@@ -11,7 +11,7 @@ export default function About() {
               <div className="aspect-square relative rounded-lg overflow-hidden bg-muted">
                 {/* Placeholder for Tatjana&apos;s photo - you can replace this with actual image */}
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40 flex items-center justify-center">
-                  <span className="text-muted-foreground text-lg">
+                  <span className="text-foreground text-lg">
                     Tatjana&apos;s Photo
                   </span>
                 </div>

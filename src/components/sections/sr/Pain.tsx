@@ -9,7 +9,7 @@ export default function Pain() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             {offer.pain.title}
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-foreground">
             {offer.pain.subheadline}
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function Pain() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-foreground">
             <strong className="text-foreground">{offer.pain.conclusion}</strong>
           </p>
         </div>

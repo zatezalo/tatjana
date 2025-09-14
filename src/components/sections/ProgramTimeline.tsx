@@ -130,7 +130,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.oneOnOne}
                 </div>
-                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Individual Sessions
                 </div> */}
               </div>
@@ -138,7 +138,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.group}
                 </div>
-                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Group Sessions
                 </div> */}
               </div>
@@ -146,7 +146,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.workshops}
                 </div>
-                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Workshops
                 </div> */}
               </div>
@@ -154,7 +154,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.assessments}
                 </div>
-                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Assessments
                 </div> */}
               </div>
@@ -162,7 +162,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.offlineSupport}
                 </div>
-                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Assessments
                 </div> */}
               </div>
@@ -170,7 +170,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.excercises}
                 </div>
-                {/* <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Assessments
                 </div> */}
               </div>

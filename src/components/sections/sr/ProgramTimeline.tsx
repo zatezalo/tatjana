@@ -11,7 +11,7 @@ export default function ProgramTimeline() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6">
             {offer.timeline.title}
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground">
+          <p className="text-lg md:text-xl text-foreground">
             Prve pobede za 90 dana. Vrhunski performirajući tim za 12 meseci.
           </p>
         </div>
@@ -66,11 +66,11 @@ export default function ProgramTimeline() {
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 mt-4 md:mt-6">
                     {index === 0 && (
                       <>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">Individualne procene</span>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">Postavljanje ciljeva</span>
                         </div>
@@ -78,11 +78,11 @@ export default function ProgramTimeline() {
                     )}
                     {index === 1 && (
                       <>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">Timski radionice</span>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">Izgradnja veština</span>
                         </div>
@@ -90,11 +90,11 @@ export default function ProgramTimeline() {
                     )}
                     {index === 2 && (
                       <>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">Praćenje performansi</span>
                         </div>
-                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
                           <span className="whitespace-nowrap">Kontinuirano poboljšanje</span>
                         </div>
@@ -118,7 +118,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.oneOnOne}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                <div className="text-xs md:text-sm text-foreground font-medium">
                   Individualne sesije
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.group}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                <div className="text-xs md:text-sm text-foreground font-medium">
                   Grupne sesije
                 </div>
               </div>
@@ -134,7 +134,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.workshops}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                <div className="text-xs md:text-sm text-foreground font-medium">
                   Radionice
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function ProgramTimeline() {
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                   {offer.timeline.totals.assessments}
                 </div>
-                <div className="text-xs md:text-sm text-muted-foreground font-medium">
+                <div className="text-xs md:text-sm text-foreground font-medium">
                   Procene
                 </div>
               </div>

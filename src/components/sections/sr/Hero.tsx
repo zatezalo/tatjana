@@ -40,7 +40,7 @@ export default function Hero() {
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 90 dana
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-foreground">
                 Garantovane vidljive performanse pobede
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function Hero() {
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 50%+ povećanje izlaza
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-foreground">
                 u 3 ključne oblasti - komunikacija, saradnja, efikasnost
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function Hero() {
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 3-10x ROI
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-foreground">
                 program se isplaćuje uštedama + novim inicijativama
               </p>
             </div>

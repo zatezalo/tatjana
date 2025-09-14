@@ -14,7 +14,7 @@ export default function Footer() {
               </div>
               <span className="text-foreground">Tatjana Tim Transformer</span>
             </Link>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-foreground text-sm">
               Transformišemo disfunkcionalne timove u visokoproduktivne jedinice kroz dokazane programe kočinga i razvoja.
             </p>
           </div>
@@ -24,27 +24,27 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Brze veze</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#pain" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#pain" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Problemi tima
                 </Link>
               </li>
               <li>
-                <Link href="#dream" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#dream" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Rešenja
                 </Link>
               </li>
               <li>
-                <Link href="#timeline" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#timeline" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Naš proces
                 </Link>
               </li>
               <li>
-                <Link href="#case-studies" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#case-studies" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Studije slučaja
                 </Link>
               </li>
               <li>
-                <Link href="#value" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#value" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Cene
                 </Link>
               </li>
@@ -56,17 +56,17 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Program</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/sr/book" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="/sr/book" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Zakazite konsultaciju
                 </Link>
               </li>
               <li>
-                <Link href="#guarantee" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#guarantee" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Naša garancija
                 </Link>
               </li>
               <li>
-                <Link href="#cta" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                <Link href="#cta" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Počnite
                 </Link>
               </li>
@@ -77,15 +77,15 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Kontakt</h3>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2 text-sm text-foreground">
                 <Mail className="w-4 h-4" />
                 hello@teamtransform.com
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2 text-sm text-foreground">
                 <Phone className="w-4 h-4" />
                 +1 (555) 123-4567
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+              <li className="flex items-center gap-2 text-sm text-foreground">
                 <MapPin className="w-4 h-4" />
                 Udaljeno i na licu mesta
               </li>
@@ -94,14 +94,14 @@ export default function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-foreground">
             © 2024 Team Transform. Sva prava zadržana.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/privacy" className="text-sm text-foreground hover:text-foreground transition-colors">
               Politika privatnosti
             </Link>
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/terms" className="text-sm text-foreground hover:text-foreground transition-colors">
               Uslovi korišćenja
             </Link>
           </div>

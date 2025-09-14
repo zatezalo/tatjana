@@ -42,7 +42,7 @@ export default function Pain() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-foreground">
             <strong className="text-foreground">{offer.pain.conclusion}</strong>
           </p>
         </div>

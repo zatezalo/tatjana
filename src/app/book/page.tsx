@@ -13,7 +13,7 @@ export default function BookPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Book Your Free Consultation
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-foreground">
               Schedule a 30-minute call to discuss your team&apos;s transformation needs.
             </p>
           </div>
@@ -55,21 +55,21 @@ export default function BookPage() {
                     <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-medium text-foreground">30 Minutes</h4>
-                      <p className="text-sm text-muted-foreground">Focused discussion about your team</p>
+                      <p className="text-sm text-foreground">Focused discussion about your team</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Users className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-medium text-foreground">Team Assessment</h4>
-                      <p className="text-sm text-muted-foreground">Understanding your current challenges</p>
+                      <p className="text-sm text-foreground">Understanding your current challenges</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-medium text-foreground">Next Steps</h4>
-                      <p className="text-sm text-muted-foreground">Clear path forward for your team</p>
+                      <p className="text-sm text-foreground">Clear path forward for your team</p>
                     </div>
                   </div>
                 </CardContent>
@@ -106,7 +106,7 @@ export default function BookPage() {
                   <CardTitle className="text-lg">Can&apos;t Find a Time?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-foreground mb-4">
                     If none of the available times work for you, we can arrange a different time.
                   </p>
                   <Button asChild variant="outline" className="w-full">

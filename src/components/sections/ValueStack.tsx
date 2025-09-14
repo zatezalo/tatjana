@@ -63,7 +63,7 @@ export default function ValueStack() {
                   <h3 className="text-2xl font-bold text-foreground mb-2">
                     Choose Your Investment
                   </h3>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-foreground text-sm">
                     Get {offer.valueStack.totalValue} worth of transformation for
                     a fraction of the cost
                   </p>
@@ -131,12 +131,12 @@ export default function ValueStack() {
                 {/* Add-on Option */}
                 {/* <div className="text-center p-4 bg-muted/30 rounded-lg">
                   <div className="flex items-center justify-center gap-2 mb-1">
-                    <Users className="w-4 h-4 text-muted-foreground" />
+                    <Users className="w-4 h-4 text-foreground" />
                     <span className="text-lg font-bold text-foreground">
                       {offer.valueStack.investment.addOn}
                     </span>
                   </div>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-foreground">
                     Additional team members
                   </p>
                 </div> */}

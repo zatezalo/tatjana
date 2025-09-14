@@ -8,7 +8,7 @@ export default function BookPage() {
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-2xl mx-auto text-center">
           <div className="mb-8">
-            <Link href="/sr" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
+            <Link href="/sr" className="inline-flex items-center gap-2 text-foreground hover:text-foreground transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Nazad na početnu
             </Link>
@@ -18,7 +18,7 @@ export default function BookPage() {
             Zakazite besplatnu konsultaciju
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-xl text-foreground mb-8">
             Rezervišite svoj 30-minutni poziv sa Tatjanom i otkrijte kako možemo pomoći vašem timu da dostigne svoj puni potencijal.
           </p>
           
@@ -30,17 +30,17 @@ export default function BookPage() {
             <div className="space-y-4 text-left">
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Email:</h3>
-                <p className="text-muted-foreground">hello@teamtransform.com</p>
+                <p className="text-foreground">hello@teamtransform.com</p>
               </div>
               
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Telefon:</h3>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                <p className="text-foreground">+1 (555) 123-4567</p>
               </div>
               
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Dostupnost:</h3>
-                <p className="text-muted-foreground">Ponedeljak - Petak, 9:00 - 17:00 CET</p>
+                <p className="text-foreground">Ponedeljak - Petak, 9:00 - 17:00 CET</p>
               </div>
             </div>
             
@@ -53,7 +53,7 @@ export default function BookPage() {
             </div>
           </div>
           
-          <div className="mt-8 text-sm text-muted-foreground">
+          <div className="mt-8 text-sm text-foreground">
             <p>
               Ili nas kontaktirajte direktno putem email-a ili telefona. 
               Odgovorićemo vam u roku od 24 sata.

@@ -18,7 +18,7 @@ export default function ValueStack() {
               {offer.valueStack.title}
             </h2>
 
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-foreground">
               {offer.valueStack.subheadline}
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function ValueStack() {
                       <div className="text-2xl font-bold text-primary mb-2">
                         €30,950
                       </div>
-                      <div className="text-sm text-muted-foreground">
+                      <div className="text-sm text-foreground">
                         Ukupna vrednost
                       </div>
                     </div>
@@ -74,7 +74,7 @@ export default function ValueStack() {
                       {offer.valueStack.investment.upfront}
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4 font-medium">
+                  <p className="text-sm text-foreground mb-4 font-medium">
                     Plaćanje odjednom
                   </p>
                   <div className="space-y-3 mb-4">
@@ -90,7 +90,7 @@ export default function ValueStack() {
                       (standardna veličina tima je 4)
                     </div>
                   </div>
-                  <div className="text-xs text-muted-foreground space-y-1">
+                  <div className="text-xs text-foreground space-y-1">
                     <p className="italic">
                       Zašto? Brzina + posvećenost = rezultati. Zato je PIF 
                       značajno snižen.
@@ -105,7 +105,7 @@ export default function ValueStack() {
                       {offer.valueStack.investment.installments}
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-foreground mb-4">
                     Fleksibilni plan plaćanja
                   </p>
                   <div className="space-y-3 mb-4">
@@ -116,7 +116,7 @@ export default function ValueStack() {
                       Dodajte dodatnu osobu: €3,000 (standardna veličina tima je 4)
                     </div>
                   </div>
-                  <div className="text-xs text-muted-foreground space-y-1">
+                  <div className="text-xs text-foreground space-y-1">
                     <p className="italic">
                       Ovo je početna cena. Sledeća grupa se povećava. 
                       Zakačite svoje mesto sada.

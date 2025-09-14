@@ -12,7 +12,7 @@ export default function CaseStudies() {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Real Results from Real Teams
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-foreground">
               See how other teams have transformed their culture and performance.
             </p>
           </div>
@@ -37,13 +37,13 @@ export default function CaseStudies() {
                   {/* Challenge */}
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Challenge:</h4>
-                    <p className="text-muted-foreground">{study.challenge}</p>
+                    <p className="text-foreground">{study.challenge}</p>
                   </div>
 
                   {/* Solution */}
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Solution:</h4>
-                    <p className="text-muted-foreground">{study.solution}</p>
+                    <p className="text-foreground">{study.solution}</p>
                   </div>
 
                   {/* Results */}

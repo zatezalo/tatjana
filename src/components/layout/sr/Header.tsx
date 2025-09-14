@@ -21,22 +21,22 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="#pain" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#pain" className="text-foreground hover:text-foreground transition-colors">
               Problemi
             </Link>
-            <Link href="#dream" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#dream" className="text-foreground hover:text-foreground transition-colors">
               Rešenja
             </Link>
-            <Link href="#timeline" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#timeline" className="text-foreground hover:text-foreground transition-colors">
               Proces
             </Link>
-            <Link href="#case-studies" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#case-studies" className="text-foreground hover:text-foreground transition-colors">
               Rezultati
             </Link>
-            <Link href="#value" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="#value" className="text-foreground hover:text-foreground transition-colors">
               Cene
             </Link>
-            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/" className="text-foreground hover:text-foreground transition-colors">
               EN
             </Link>
             <Button asChild>
@@ -61,42 +61,42 @@ export default function Header() {
             <nav className="flex flex-col gap-4 py-4">
               <Link 
                 href="#pain" 
-                className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
+                className="text-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Problemi
               </Link>
               <Link 
                 href="#dream" 
-                className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
+                className="text-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Rešenja
               </Link>
               <Link 
                 href="#timeline" 
-                className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
+                className="text-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Proces
               </Link>
               <Link 
                 href="#case-studies" 
-                className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
+                className="text-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Rezultati
               </Link>
               <Link 
                 href="#value" 
-                className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
+                className="text-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Cene
               </Link>
               <Link 
                 href="/" 
-                className="text-muted-foreground hover:text-foreground transition-colors px-4 py-2"
+                className="text-foreground hover:text-foreground transition-colors px-4 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 EN
