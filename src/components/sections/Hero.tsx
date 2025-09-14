@@ -18,12 +18,13 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-           DO YOU WANT A MORE EFFECTIVE TEAM?
+            DO YOU WANT A MORE EFFECTIVE TEAM?
           </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
-          Stop babysitting the team. Build a team that plans, delivers, and improves without you.
+            Stop babysitting the team. Build a team that plans, delivers, and
+            improves without you.
           </p>
 
           {/* Stats */}
@@ -45,11 +46,9 @@ export default function Hero() {
                 <BarChart3 className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                20+ years of experience
+                10+ years of experience
               </h3>
-              <p className="text-foreground">
-                More then 100 happy clients
-              </p>
+              <p className="text-foreground">More then 100 happy clients</p>
             </div>
 
             <div className="text-center">
@@ -57,12 +56,9 @@ export default function Hero() {
                 <DollarSign className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                Leader Time Back
-               
+                12 Months
               </h3>
-              <p className="text-foreground">
-                Stop firefighting. Focus on strategy
-              </p>
+              <p className="text-foreground">Full transformation</p>
             </div>
           </div>
 
