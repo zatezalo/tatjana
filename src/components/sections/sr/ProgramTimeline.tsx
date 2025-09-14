@@ -114,37 +114,53 @@ export default function ProgramTimeline() {
               Uključeno
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-              <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+              <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center items-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
+                <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.oneOnOne}
                 </div>
-                <div className="text-xs md:text-sm text-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Individualne sesije
-                </div>
+                </div> */}
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.group}
                 </div>
-                <div className="text-xs md:text-sm text-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Grupne sesije
-                </div>
+                </div> */}
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.workshops}
                 </div>
-                <div className="text-xs md:text-sm text-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Radionice
-                </div>
+                </div> */}
               </div>
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                <div className="text-2xl md:text-3xl font-bold text-primary">
                   {offer.timeline.totals.assessments}
                 </div>
-                <div className="text-xs md:text-sm text-foreground font-medium">
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
                   Procene
+                </div> */}
+              </div>
+              <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
+                <div className="text-2xl md:text-3xl font-bold text-primary">
+                  {offer.timeline.totals.offlineSupport}
                 </div>
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
+                  Procene
+                </div> */}
+              </div>
+              <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">
+                <div className="text-2xl md:text-3xl font-bold text-primary">
+                  {offer.timeline.totals.excercises}
+                </div>
+                {/* <div className="text-xs md:text-sm text-foreground font-medium">
+                  Procene
+                </div> */}
               </div>
             </div>
           </div>
@@ -152,8 +168,8 @@ export default function ProgramTimeline() {
 
         {/* Promise */}
         <div className="text-center mb-6 md:mb-8">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-medium">
-            <CheckCircle className="w-4 h-4 md:w-5 md:h-5" />
+          <div className="inline-flex items-center gap-3 bg-primary/10 text-primary px-4 md:px-6 py-2 md:py-3 rounded-full text-base md:text-lg font-medium">
+            <CheckCircle className="w-12 h-12 md:w-5 md:h-5" />
             <span className="text-center">{offer.timeline.promise}</span>
           </div>
         </div>

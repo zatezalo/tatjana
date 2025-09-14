@@ -62,7 +62,7 @@ export default function CaseStudies() {
                   {/* Testimonial */}
                   <div className="bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
                     <p className="text-foreground italic mb-3">&quot;{study.testimonial}&quot;</p>
-                    <p className="text-sm font-medium text-primary">— {study.author}</p>
+                    <p className="text-sm font-medium text-primary">- {study.author}</p>
                   </div>
                 </CardContent>
               </Card>

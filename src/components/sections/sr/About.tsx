@@ -34,7 +34,7 @@ export default function About() {
               </div>
 
               <div className="space-y-4 text-foreground leading-relaxed">
-                <p>
+                <p className="font-medium text-foreground">
                   Više od 20 godina rešava najčešći
                   problem menadžmenta: pametni timovi koji ne performiraju.
                   Tatjana je obučavala i kočirala lidere u preko 100 kompanija,
@@ -43,7 +43,7 @@ export default function About() {
                   jedinice koje isporučuju 50% više izlaza za 12 meseci.
                 </p>
 
-                <p>
+                <p className="font-medium text-foreground">
                   Tokom mojih 15 godina u menadžerskim ulogama, radila sam sa
                   odličnim pojedincima, ali najveći izazov je bio da postignemo
                   veličinu kao tim. Većina timova nikad nema probleme sa

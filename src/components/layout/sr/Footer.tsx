@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:col-start-2">
             <Link href="/sr" className="flex items-center gap-2 font-bold text-xl">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Users className="w-5 h-5 text-primary-foreground" />
@@ -15,12 +15,12 @@ export default function Footer() {
               <span className="text-foreground">Tatjana Tim Transformer</span>
             </Link>
             <p className="text-foreground text-sm">
-              Transformišemo disfunkcionalne timove u visokoproduktivne jedinice kroz dokazane programe kočinga i razvoja.
+            Transformišemo disfunkcionalne timove u visokoproduktivne jedinice kroz dokazane programe kočinga i razvoja.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h3 className="font-semibold text-foreground mb-4">Brze veze</h3>
             <ul className="space-y-2">
               <li>
@@ -34,25 +34,31 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="#about" className="text-foreground hover:text-foreground transition-colors text-sm">
+                  O Tatjani
+                </Link>
+              </li>
+              <li>
                 <Link href="#timeline" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Naš proces
                 </Link>
               </li>
-              <li>
-                <Link href="#case-studies" className="text-foreground hover:text-foreground transition-colors text-sm">
-                  Studije slučaja
-                </Link>
-              </li>
+          
               <li>
                 <Link href="#value" className="text-foreground hover:text-foreground transition-colors text-sm">
                   Cene
                 </Link>
               </li>
+              <li>
+                <Link href="#cta" className="text-foreground hover:text-foreground transition-colors text-sm">
+                  Pošaljite upit
+                </Link>
+              </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Program */}
-          <div>
+          {/* <div>
             <h3 className="font-semibold text-foreground mb-4">Program</h3>
             <ul className="space-y-2">
               <li>
@@ -67,11 +73,11 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#cta" className="text-foreground hover:text-foreground transition-colors text-sm">
-                  Počnite
+                  Pošaljite upit
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
@@ -79,11 +85,11 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Mail className="w-4 h-4" />
-                hello@teamtransform.com
+                <a href="mailto:tanja@hrcentar.rs">tanja@hrcentar.rs</a>
               </li>
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Phone className="w-4 h-4" />
-                +1 (555) 123-4567
+                <a href="tel:+381604121304">+381 60 4121304</a>
               </li>
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <MapPin className="w-4 h-4" />

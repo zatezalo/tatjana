@@ -17,7 +17,7 @@ export default function Hero() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-3xl md:text-4xl xl:text-7xl font-bold text-foreground mb-4 sm:mb-6 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
             Udvostručite rezultate vašeg tima za{" "}
             <span className="text-primary block sm:inline">
               12 meseci-bez zapošljavanja novih ljudi
@@ -82,9 +82,24 @@ export default function Hero() {
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </Button>
+            {/* <Button
+              variant="outline"
+              size="lg"
+              className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto"
+            >
+              Learn More
+            </Button> */}
           </div>
         </div>
       </div>
+
+      {/* Scroll indicator */}
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-primary/60 rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div> */}
     </section>
   );
 }
+

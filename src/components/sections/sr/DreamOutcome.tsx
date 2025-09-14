@@ -24,7 +24,7 @@ export default function DreamOutcome() {
             return (
               <div
                 key={index}
-                className={`flex items-start gap-4 p-6 bg-background rounded-lg border border-primary/20 hover:border-primary/40 transition-colors shadow-sm ${
+                className={`flex items-center gap-4 p-6 bg-background rounded-lg border border-primary/20 hover:border-primary/40 transition-colors shadow-sm ${
                   isLastItem && isOddCount ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''
                 }`}
               >

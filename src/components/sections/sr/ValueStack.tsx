@@ -45,13 +45,10 @@ export default function ValueStack() {
               {/* Value Summary */}
               <div className="text-center">
                 <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8 max-w-4xl mx-auto">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div className="flex flex-col gap-6 text-center">
                     <div className="bg-background p-4 rounded-lg border border-primary/10">
                       <div className="text-2xl font-bold text-primary mb-2">
-                        €30,950
-                      </div>
-                      <div className="text-sm text-foreground">
-                        Ukupna vrednost
+                        Total Value: €30,950
                       </div>
                     </div>
                   </div>
@@ -79,23 +76,23 @@ export default function ValueStack() {
                   </p>
                   <div className="space-y-3 mb-4">
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Uštedite €4,000 vs fleksibilni plan (25% popusta)
+                      Uštedite €6,000 vs fleksibilni plan (37.5% popusta)
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Uštedite €18,950 vs pojedinačna vrednost (
+                      Uštedite €20,950 vs pojedinačna vrednost (
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
                       Dodajte dodatno mesto: {offer.valueStack.investment.addOn}{" "}
-                      (standardna veličina tima je 4)
+                      <br />(standardna veličina tima je 4)
                     </div>
                   </div>
-                  <div className="text-xs text-foreground space-y-1">
+                  {/* <div className="text-xs text-foreground space-y-1">
                     <p className="italic">
                       Zašto? Brzina + posvećenost = rezultati. Zato je PIF 
                       značajno snižen.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Installment Option */}
@@ -113,21 +110,24 @@ export default function ValueStack() {
                       {offer.valueStack.investment.installmentBreakdown}
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Dodajte dodatnu osobu: €3,000 (standardna veličina tima je 4)
+                      Uštedite €14,950 vs pojedinačna vrednost (
+                      {offer.valueStack.totalValue})
                     </div>
-                  </div>
-                  <div className="text-xs text-foreground space-y-1">
-                    <p className="italic">
-                      Ovo je početna cena. Sledeća grupa se povećava. 
-                      Zakačite svoje mesto sada.
-                    </p>
+                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                      Dodajte dodatnu osobu: €3,000 svaki <br />(standardna veličina tima je 4)
+                    </div>
                   </div>
                 </div>
 
-                <div className="pt-4">
-                  <Button asChild className="w-full" size="lg">
+                <div>
+                  <Button asChild className="w-full mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 h-auto" size="lg">
                     <Link href="/sr/book">Zakazite besplatnu konsultaciju</Link>
                   </Button>
+                  <div className="text-center">
+                    <Badge className="text-sm sm:text-base md:text-lg px-3 sm:px-4 py-2 bg-[#FFF4E5] text-[#D35400] border border-[#FF9800] hover:bg-[#FFF4E5] hover:cursor-default">
+                      3 mesta dostupna za ovu cenu
+                    </Badge>
+                  </div>
                 </div>
               </CardContent>
             </Card>

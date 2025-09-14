@@ -6,23 +6,23 @@ export const offer = {
   },
   pain: {
     title: "Da li vam ovo zvuči poznato?",
-    subheadline: "Kao lider, ne gubite samo produktivnost — već i san, novac i zamah.",
+    subheadline: "Kao lider, ne gubite samo produktivnost - već i san, novac i zamah.",
     bullets: [
       "Delegirate zadatke, ali se vraćaju kasno, polovično urađeni ili nikada završeni.",
       "Stalno ponavljate iste povratne informacije, ali se ništa ne menja.",
       "Stalno gasite požare koje je tim trebalo da spreči.",
       "Propuštate rokove, gubite klijente ili trošite novac jer tim ne može da se usaglasi.",
-      "Od vas se očekuje da uvek pronađete rešenje — proaktivnost u timu ne postoji.",
-      "Vi donosite odluke i nosite potpunu odgovornost — imate talentovan tim, ali slabo lično vlasništvo nad zadacima.",
+      "Od vas se očekuje da uvek pronađete rešenje - proaktivnost u timu ne postoji.",
+      "Vi donosite odluke i nosite potpunu odgovornost - imate talentovan tim, ali slabo lično vlasništvo nad zadacima.",
     ],
-    conclusion: "Ako ovo opisuje vaš svakodnevni rad, imate problem u timu — i on je rešiv.",
+    conclusion: "Ako ovo opisuje vaš svakodnevni rad, imate problem u timu - i on je rešiv.",
   },
   dream: {
     title: "Kako će vođenje tima konačno izgledati",
-    subheadline: "Umesto da jurite, ispravljate i ponavljate se — postaje normalno da:",
+    subheadline: "Umesto da jurite, ispravljate i ponavljate se - postaje normalno da:",
     bullets: [
       "Sastanci su kratki, odluke se sprovode, a posao se obavlja.",
-      "Delegirate jednom — i zadatak je završen.",
+      "Delegirate jednom - i zadatak je završen.",
       "Tim preuzima odgovornost, brzo se usklađuje i predlaže načine za rast prihoda.",
       "Najbolji ljudi ostaju jer su im povereni izazovni i značajni zadaci i jer su prepoznati.",
       "Projekti se završavaju na vreme i kako treba.",
@@ -55,7 +55,7 @@ export const offer = {
         title: "Iskustvo rasta",
         description: {
           whatYouGet: "6 individualnih sesija (1na1) + 6 grupnih sesija + personalizovani edukativni materijali i vežbe za svakog člana tima + analiza dokumenata i poruka + mentorstvo + e-mail i oflajn podrška (do 3h mesečno) + plan za dobrobit svakog člana tima.",
-          howWeWork: "U ovoj fazi trener pruža podršku kako biste ostali na pravom putu sa novim načinom razmišljanja. Na kraju, promene su očigledne — tim je siguran u sebe, angažovan, brzo se prilagođava i pouzdano isporučuje. Ljudi osećaju razliku — posao je jasniji, rezultat bolji, dani mirniji. Sistem je sada deo kulture tima.",
+          howWeWork: "U ovoj fazi trener pruža podršku kako biste ostali na pravom putu sa novim načinom razmišljanja. Na kraju, promene su očigledne - tim je siguran u sebe, angažovan, brzo se prilagođava i pouzdano isporučuje. Ljudi osećaju razliku - posao je jasniji, rezultat bolji, dani mirniji. Sistem je sada deo kulture tima.",
           results: "Odrastao sistem – harmonija, odgovornost, inovacija.",
         }
       },
@@ -118,6 +118,6 @@ export const offer = {
   },
   finalCta: {
     title: "Spremni da transformišete svoj tim?",
-    subtitle: "Zakažite besplatnu konsultaciju — hajde da razgovaramo kako vaš tim može dostići svoj puni potencijal.",
+    subtitle: "Zakažite besplatnu konsultaciju - hajde da razgovaramo kako vaš tim može dostići svoj puni potencijal.",
   },
 };
