@@ -18,17 +18,12 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            Double Your Team&apos;s Results in{" "}
-            <span className="text-primary block sm:inline">
-              12 Months-Without Hiring Anyone New
-            </span>
+           DO YOU WANT A MORE EFFECTIVE TEAM?
           </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
-            In 90 days, see visible improvements. In 12 months, your team
-            becomes a motivated, self-managing powerhouse that delivers on time,
-            creates new revenue, and enables your energy to go where it matters.
+          Stop babysitting the team. Build a team that plans, delivers, and improves without you.
           </p>
 
           {/* Stats */}
@@ -50,10 +45,10 @@ export default function Hero() {
                 <BarChart3 className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                50%+ Output Increase
+                20+ years of experience
               </h3>
               <p className="text-foreground">
-                in 3 key areas - communication, collaboration, efficiency
+                More then 100 happy clients
               </p>
             </div>
 
@@ -62,10 +57,11 @@ export default function Hero() {
                 <DollarSign className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                3-10x ROI
+                Leader Time Back
+               
               </h3>
               <p className="text-foreground">
-                program pays for itself in savings + new initiatives
+                Stop firefighting. Focus on strategy
               </p>
             </div>
           </div>
