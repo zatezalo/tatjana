@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Send, AlertCircle, ArrowRight } from "lucide-react";
 import { offer } from "@/lib/offer";
 import Link from "next/link";

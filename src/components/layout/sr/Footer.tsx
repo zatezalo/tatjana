@@ -85,7 +85,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:tanja@hrcentar.rs">tanja@hrcentar.rs</a>
+                <a href="mailto:tatjan.sokcic@hrcentar.rs">tatjan.sokcic@hrcentar.rs</a>
               </li>
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Phone className="w-4 h-4" />
