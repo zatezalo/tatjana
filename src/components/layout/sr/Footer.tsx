@@ -91,10 +91,10 @@ export default function Footer() {
                 <Phone className="w-4 h-4" />
                 <a href="tel:+381604121304">+381 60 4121304</a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-foreground">
+              {/* <li className="flex items-center gap-2 text-sm text-foreground">
                 <MapPin className="w-4 h-4" />
                 Udaljeno i na licu mesta
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
