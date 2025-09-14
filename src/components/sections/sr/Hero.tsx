@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BarChart3, Clock, DollarSign, Users } from "lucide-react";
+import { ArrowRight, BarChart3, Clock, DollarSign } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -11,24 +11,19 @@ export default function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-6 sm:mb-8">
+          {/* <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-6 sm:mb-8">
             <Users className="w-3 h-3 sm:w-4 sm:h-4" />
             Program transformacije tima
-          </div>
+          </div> */}
 
           {/* Main Headline */}
           <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            Udvostručite rezultate vašeg tima za{" "}
-            <span className="text-primary block sm:inline">
-              12 meseci-bez zapošljavanja novih ljudi
-            </span>
+           DA LI ŽELITE EFEKTIVNIJI TIM?
           </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
-            Za 90 dana, vidite vidljiva poboljšanja. Za 12 meseci, vaš tim
-            postaje motivisana, samoupravljajuća snaga koja isporučuje na vreme,
-            stvara nove prihode i omogućava vašoj energiji da ide tamo gde je potrebna.
+          Prestanite da &quot;čuvate&quot; tim. Napravite tim koji planira, isporučuje i poboljšava bez vas.
           </p>
 
           {/* Stats */}
@@ -38,7 +33,7 @@ export default function Hero() {
                 <Clock className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                90 dana
+                90 Dana
               </h3>
               <p className="text-foreground">
                 Garantovane vidljive performanse pobede
@@ -50,10 +45,10 @@ export default function Hero() {
                 <BarChart3 className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                50%+ povećanje izlaza
+                20+ godina iskustva
               </h3>
               <p className="text-foreground">
-                u 3 ključne oblasti - komunikacija, saradnja, efikasnost
+                Više od 100 zadovoljnih klijenata
               </p>
             </div>
 
@@ -62,10 +57,11 @@ export default function Hero() {
                 <DollarSign className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                3-10x ROI
+                Vreme za lidera
+               
               </h3>
               <p className="text-foreground">
-                program se isplaćuje uštedama + novim inicijativama
+                Prestanite gašenja požara. Fokusirajte se na strategiju
               </p>
             </div>
           </div>
