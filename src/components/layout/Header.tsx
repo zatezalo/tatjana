@@ -8,11 +8,6 @@ import { useState } from "react";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const languages = [
-    { code: "en", name: "EN", flag: "🇺🇸", href: "/" },
-    { code: "sr", name: "SR", flag: "🇷🇸", href: "/sr" },
-  ];
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
@@ -28,7 +23,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <div className="flex items-center gap-1">
-              <LanguagePicker currentLanguage="en" languages={languages} />
+              <LanguagePicker currentLanguage="en" />
               <div className="h-6 w-px bg-border"></div>
             </div>
 
@@ -68,7 +63,7 @@ export default function Header() {
           <div className="md:hidden border-t bg-background">
             <nav className="flex flex-col gap-4 py-4">
               <div className="px-4">
-                <LanguagePicker currentLanguage="en" languages={languages} />
+                <LanguagePicker currentLanguage="en" />
               </div>
               <div className="px-4">
                 <div className="h-px bg-border"></div>

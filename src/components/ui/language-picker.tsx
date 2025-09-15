@@ -12,10 +12,15 @@ interface Language {
 
 interface LanguagePickerProps {
   currentLanguage: string;
-  languages: Language[];
 }
 
-export default function LanguagePicker({ currentLanguage, languages }: LanguagePickerProps) {
+const defaultLanguages: Language[] = [
+  { code: "en", name: "EN", flag: "🇺🇸", href: "/" },
+  { code: "sr", name: "SR", flag: "🇷🇸", href: "/sr" },
+];
+
+export default function LanguagePicker({ currentLanguage }: LanguagePickerProps) {
+  const languages = defaultLanguages;
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
