@@ -1,11 +1,17 @@
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import LanguagePicker from "@/components/ui/language-picker";
 import { Users, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const languages = [
+    { code: "sr", name: "SR", flag: "🇷🇸", href: "/sr" },
+    { code: "en", name: "EN", flag: "🇺🇸", href: "/" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -21,6 +27,11 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
+            <div className="flex items-center gap-1">
+              <LanguagePicker currentLanguage="sr" languages={languages} />
+              <div className="h-6 w-px bg-border"></div>
+            </div>
+
             <Link href="#pain" className="text-foreground hover:text-foreground transition-colors">
               Problemi
             </Link>
@@ -36,9 +47,7 @@ export default function Header() {
             <Link href="#value" className="text-foreground hover:text-foreground transition-colors">
               Cene
             </Link>
-            <Link href="/" className="text-foreground hover:text-foreground transition-colors">
-              EN
-            </Link>
+           
             <Button asChild>
               <Link href="/sr/book">Zakazite konsultaciju</Link>
             </Button>
@@ -59,6 +68,12 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden border-t bg-background">
             <nav className="flex flex-col gap-4 py-4">
+              <div className="px-4">
+                <LanguagePicker currentLanguage="sr" languages={languages} />
+              </div>
+              <div className="px-4">
+                <div className="h-px bg-border"></div>
+              </div>
               <Link 
                 href="#pain" 
                 className="text-foreground hover:text-foreground transition-colors px-4 py-2"
@@ -93,13 +108,6 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Cene
-              </Link>
-              <Link 
-                href="/" 
-                className="text-foreground hover:text-foreground transition-colors px-4 py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                EN
               </Link>
               <div className="px-4 pt-2">
                 <Button asChild className="w-full">
