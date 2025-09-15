@@ -43,22 +43,24 @@ export default function Hero() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">
-                10+ years of experience
-              </h3>
-              <p className="text-foreground">More then 100 happy clients</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <DollarSign className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
                 12 Months
               </h3>
-              <p className="text-foreground">Full transformation</p>
+              <p className="text-foreground">
+                Build a team that plans, ships, and improves without you.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <BarChart3 className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-2">
+                10+ years of experience
+              </h3>
+              <p className="text-foreground">More than 100 happy clients</p>
             </div>
           </div>
 
