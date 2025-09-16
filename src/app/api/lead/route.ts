@@ -1,5 +1,62 @@
 import { NextRequest, NextResponse } from "next/server";
 
+// In-memory rate limiting store (use Redis in production)
+const rateLimitStore = new Map<string, { count: number; resetTime: number }>();
+
+// Spam keywords to filter
+const spamKeywords = [
+  'bitcoin', 'crypto', 'loan', 'casino', 'viagra', 'pills', 'weight loss',
+  'make money', 'get rich', 'free money', 'click here', 'limited time',
+  'congratulations', 'winner', 'prize', 'urgent', 'act now'
+];
+
+// Suspicious email domains
+const suspiciousDomains = [
+  '10minutemail.com', 'tempmail.org', 'guerrillamail.com', 'mailinator.com',
+  'throwaway.email', 'temp-mail.org'
+];
+
+function getClientIP(request: NextRequest): string {
+  const forwarded = request.headers.get('x-forwarded-for');
+  const realIP = request.headers.get('x-real-ip');
+  
+  if (forwarded) {
+    return forwarded.split(',')[0].trim();
+  }
+  if (realIP) {
+    return realIP;
+  }
+  return 'unknown';
+}
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitStore.get(ip);
+  
+  if (!entry || now > entry.resetTime) {
+    // Reset or create new entry (3 submissions per hour)
+    rateLimitStore.set(ip, { count: 1, resetTime: now + 60 * 60 * 1000 });
+    return false;
+  }
+  
+  if (entry.count >= 3) {
+    return true;
+  }
+  
+  entry.count++;
+  return false;
+}
+
+function containsSpam(text: string): boolean {
+  const lowerText = text.toLowerCase();
+  return spamKeywords.some(keyword => lowerText.includes(keyword));
+}
+
+function isSuspiciousEmail(email: string): boolean {
+  const domain = email.split('@')[1]?.toLowerCase();
+  return suspiciousDomains.includes(domain || '');
+}
+
 async function sendSlackNotification(leadData: {
   name: string;
   email: string;
@@ -78,10 +135,12 @@ async function sendSlackNotification(leadData: {
   slackMessage.blocks.push(
     {
       type: "context", 
-      text: {
+      elements: [
+        {
         type: "mrkdwn",
         text: `📅  ${timestamp}`
-      }
+        }
+      ]
     }
   );
 
@@ -128,7 +187,41 @@ async function sendSlackNotification(leadData: {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, company, teamSize, message } = body;
+    const { name, email, company, teamSize, message, honeypot, timestamp } = body;
+
+    // Check rate limiting
+    const clientIP = getClientIP(request);
+    if (isRateLimited(clientIP)) {
+      return NextResponse.json(
+        { error: "Too many submissions. Please try again later." },
+        { status: 429 }
+      );
+    }
+
+    // Honeypot check (bot trap)
+    if (honeypot && honeypot.trim() !== "") {
+      console.log(`Honeypot triggered from IP: ${clientIP}`);
+      // Return success to not reveal the honeypot
+      return NextResponse.json(
+        { message: "Lead submitted successfully" },
+        { status: 200 }
+      );
+    }
+
+    // Time-based validation (prevent too-quick submissions)
+    if (timestamp) {
+      const submissionTime = Date.now();
+      const formLoadTime = parseInt(timestamp);
+      const timeDiff = submissionTime - formLoadTime;
+      
+      if (timeDiff < 3000) { // Less than 3 seconds
+        console.log(`Form submitted too quickly from IP: ${clientIP}, time: ${timeDiff}ms`);
+        return NextResponse.json(
+          { error: "Please take a moment to fill out the form properly." },
+          { status: 400 }
+        );
+      }
+    }
 
     // Validate required fields
     const missingFields = [];
@@ -154,6 +247,25 @@ export async function POST(request: NextRequest) {
     if (!emailRegex.test(email)) {
       return NextResponse.json(
         { error: "Please enter a valid email address" },
+        { status: 400 }
+      );
+    }
+
+    // Check for suspicious email domains
+    if (isSuspiciousEmail(email)) {
+      console.log(`Suspicious email domain from IP: ${clientIP}, email: ${email}`);
+      return NextResponse.json(
+        { error: "Please use a valid business email address." },
+        { status: 400 }
+      );
+    }
+
+    // Content spam filtering
+    const allContent = `${name} ${company} ${message}`.toLowerCase();
+    if (containsSpam(allContent)) {
+      console.log(`Spam content detected from IP: ${clientIP}`);
+      return NextResponse.json(
+        { error: "Your message contains inappropriate content. Please revise and try again." },
         { status: 400 }
       );
     }

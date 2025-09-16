@@ -16,6 +16,8 @@ export default function FinalCTA() {
     company: "",
     teamSize: "",
     message: "",
+    honeypot: "", // Bot trap field
+    timestamp: Date.now().toString(), // Form load time
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
@@ -37,7 +39,15 @@ export default function FinalCTA() {
 
       if (response.ok) {
         setSubmitStatus("success");
-        setFormData({ name: "", email: "", company: "", teamSize: "", message: "" });
+        setFormData({ 
+          name: "", 
+          email: "", 
+          company: "", 
+          teamSize: "", 
+          message: "", 
+          honeypot: "", 
+          timestamp: Date.now().toString() 
+        });
         setErrorMessage("");
       } else {
         const errorData = await response.json();
@@ -95,6 +105,17 @@ export default function FinalCTA() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* Honeypot field - hidden from users, visible to bots */}
+                    <input
+                      type="text"
+                      name="honeypot"
+                      value={formData.honeypot}
+                      onChange={handleChange}
+                      style={{ display: 'none' }}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
