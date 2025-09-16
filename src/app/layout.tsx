@@ -3,12 +3,12 @@ import "./globals.css";
 import LanguageLayout from "@/components/LanguageLayout";
 
 export const metadata: Metadata = {
-  title: "Team transformation Program | Turn Dysfunctional Teams into High-Performing Units",
+  title: "Tatjana Šokčić | Team coaching and development program",
   description: "In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse. Complete Team transformation program with proven results.",
   keywords: "Team transformation, team coaching, team building, leadership development, team performance, workplace culture",
-  authors: [{ name: "Team transformation Program" }],
-  creator: "Team transformation Program",
-  publisher: "Team transformation Program",
+  authors: [{ name: "Tatjana Šokčić" }],
+  creator: "Tatjana Šokčić",
+  publisher: "Tatjana Šokčić",
   icons: {
     icon: "/logo.png",
   },
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     title: "Team transformation Program | Turn Dysfunctional Teams into High-Performing Units",
     description: "Team coaching and leadership development program (12 months). In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.",
     url: "https://teamtransformation.com",
-    siteName: "Team transformation Program",
+    siteName: "Tatjana Šokčić",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Team transformation Program",
+        alt: "Tatjana Šokčić",
       },
     ],
     locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Team transformation Program | Turn Dysfunctional Teams into High-Performing Units",
+    title: "Tatjana Šokčić | Team coaching and development program",
     description: "In 12 months, transform your team into a motivated, collaborative, and profitable powerhouse.",
     images: ["/og-image.jpg"],
   },
