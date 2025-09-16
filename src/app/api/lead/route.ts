@@ -81,7 +81,8 @@ async function sendSlackNotification(leadData: {
     minute: "2-digit"
   });
 
-  const slackMessage = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const slackMessage: any = {
     text: "<!here> 🎯 New Lead Submission!",
     blocks: [
       {
@@ -134,11 +135,11 @@ async function sendSlackNotification(leadData: {
   // Add timestamp and actions
   slackMessage.blocks.push(
     {
-      type: "context", 
+      type: "context",
       elements: [
         {
-        type: "mrkdwn",
-        text: `📅  ${timestamp}`
+          type: "mrkdwn",
+          text: `📅 ${timestamp}`
         }
       ]
     }
