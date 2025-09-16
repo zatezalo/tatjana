@@ -104,68 +104,50 @@ export default function About() {
             </div>
             
             <div className="relative overflow-hidden">
-              <div className="flex animate-scroll-seamless">
-                {/* First complete set */}
-                <div className="flex flex-shrink-0">
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
-                    <Image
-                      src="/referals/fresenius-medical-care.png"
-                      alt="Fresenius Medical Care"
-                      width={120}
-                      height={60}
-                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
-                    <Image
-                      src="/referals/logo-acb-company.png"
-                      alt="ACB Company"
-                      width={120}
-                      height={60}
-                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
-                    <Image
-                      src="/referals/nis-logo.png"
-                      alt="NIS"
-                      width={120}
-                      height={60}
-                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                </div>
+              <div className="flex animate-infinite-scroll whitespace-nowrap">
+                {/* Create many repetitions of logos for true infinite scroll */}
+                {Array.from({ length: 20 }).map((_, index) => {
+                  const logos = [
+                    { src: '/referals/fresenius-medical-care.png', alt: 'Fresenius Medical Care' },
+                    { src: '/referals/logo-acb-company.png', alt: 'ACB Company' },
+                    { src: '/referals/nis-logo.png', alt: 'NIS' }
+                  ];
+                  const logo = logos[index % 3];
+                  
+                  return (
+                    <div key={index} className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0">
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={120}
+                        height={60}
+                        className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  );
+                })}
                 
-                {/* Duplicate set for seamless loop */}
-                <div className="flex flex-shrink-0">
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
-                    <Image
-                      src="/referals/fresenius-medical-care.png"
-                      alt="Fresenius Medical Care"
-                      width={120}
-                      height={60}
-                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
-                    <Image
-                      src="/referals/logo-acb-company.png"
-                      alt="ACB Company"
-                      width={120}
-                      height={60}
-                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
-                    <Image
-                      src="/referals/nis-logo.png"
-                      alt="NIS"
-                      width={120}
-                      height={60}
-                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                    />
-                  </div>
-                </div>
+                {/* Duplicate the entire sequence for seamless looping */}
+                {Array.from({ length: 20 }).map((_, index) => {
+                  const logos = [
+                    { src: '/referals/fresenius-medical-care.png', alt: 'Fresenius Medical Care' },
+                    { src: '/referals/logo-acb-company.png', alt: 'ACB Company' },
+                    { src: '/referals/nis-logo.png', alt: 'NIS' }
+                  ];
+                  const logo = logos[index % 3];
+                  
+                  return (
+                    <div key={`duplicate-${index}`} className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0">
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={120}
+                        height={60}
+                        className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

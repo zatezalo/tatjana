@@ -123,7 +123,7 @@
   }
 }
 
-@keyframes scroll-seamless {
+@keyframes infinite-scroll {
   0% {
     transform: translateX(0);
   }
@@ -132,8 +132,13 @@
   }
 }
 
-.animate-scroll-seamless {
-  animation: scroll-seamless 20s linear infinite;
+.animate-infinite-scroll {
+  animation: infinite-scroll 40s linear infinite;
   will-change: transform;
+}
+
+/* Pause animation on hover */
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
 }
 
