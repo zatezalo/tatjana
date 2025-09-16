@@ -20,6 +20,25 @@ export default function About() {
                   className="object-cover"
                 />               
               </div>
+              <div className="pt-4">
+                <div className="flex flex-wrap gap-4">
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    PCC, ICF Certifikovano
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    EBRD Konsultant
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Akreditovani Inspire Procenjivač
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Hogan & SDI Certifikovano
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Licencirani Mediator
+                  </span>
+                </div>
+              </div>
             </div>
 
             {/* Content on the right */}
@@ -66,27 +85,70 @@ export default function About() {
               </div>
 
               {/* Credentials */}
-              <div className="pt-4">
-                <div className="flex flex-wrap gap-4">
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    PCC, ICF Certifikovano
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    EBRD Konsultant
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Akreditovani Inspire Procenjivač
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Hogan & SDI Certifikovano
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Licencirani Mediator
-                  </span>
-                </div>
+              
+            </div>
+          </div>
+          
+          {/* Client Logos Carousel */}
+          <div className="mt-6 pt-6 border-t border-border">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-2">
+                Pouzdane od strane vodećih kompanija
+              </h3>
+              <p className="text-muted-foreground">
+                Organizacije koje veruju Tatjani da transformiše njihove timove
+              </p>
+            </div>
+            
+            <div className="relative overflow-hidden">
+              <div className="flex animate-infinite-scroll whitespace-nowrap">
+                {/* Create many repetitions of logos for true infinite scroll */}
+                {Array.from({ length: 20 }).map((_, index) => {
+                  const logos = [
+                    { src: '/referals/fresenius-medical-care.png', alt: 'Fresenius Medical Care' },
+                    { src: '/referals/logo-acb-company.png', alt: 'ACB Company' },
+                    { src: '/referals/nis-logo.png', alt: 'NIS' }
+                  ];
+                  const logo = logos[index % 3];
+                  
+                  return (
+                    <div key={index} className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0">
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={120}
+                        height={60}
+                        className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  );
+                })}
+                
+                {/* Duplicate the entire sequence for seamless looping */}
+                {Array.from({ length: 20 }).map((_, index) => {
+                  const logos = [
+                    { src: '/referals/fresenius-medical-care.png', alt: 'Fresenius Medical Care' },
+                    { src: '/referals/logo-acb-company.png', alt: 'ACB Company' },
+                    { src: '/referals/nis-logo.png', alt: 'NIS' }
+                  ];
+                  const logo = logos[index % 3];
+                  
+                  return (
+                    <div key={`duplicate-${index}`} className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0">
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={120}
+                        height={60}
+                        className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
