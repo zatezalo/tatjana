@@ -20,6 +20,7 @@ export default function FinalCTA() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,11 +39,15 @@ export default function FinalCTA() {
       if (response.ok) {
         setSubmitStatus("success");
         setFormData({ name: "", email: "", company: "", teamSize: "", message: "" });
+        setErrorMessage("");
       } else {
+        const errorData = await response.json();
         setSubmitStatus("error");
+        setErrorMessage(errorData.message || "Nešto je pošlo po zlu. Molimo pokušajte ponovo.");
       }
     } catch {
       setSubmitStatus("error");
+      setErrorMessage("Nešto je pošlo po zlu. Molimo pokušajte ponovo.");
     } finally {
       setIsSubmitting(false);
     }
@@ -125,12 +130,13 @@ export default function FinalCTA() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                          Naziv kompanije
+                          Naziv kompanije *
                         </label>
                         <Input
                           id="company"
                           name="company"
                           type="text"
+                          required
                           value={formData.company}
                           onChange={handleChange}
                           placeholder="Vaša kompanija"
@@ -138,11 +144,12 @@ export default function FinalCTA() {
                       </div>
                       <div>
                         <label htmlFor="teamSize" className="block text-sm font-medium text-foreground mb-2">
-                          Veličina tima
+                          Veličina tima *
                         </label>
                         <select
                           id="teamSize"
                           name="teamSize"
+                          required
                           value={formData.teamSize}
                           onChange={handleChange}
                           className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
@@ -159,11 +166,12 @@ export default function FinalCTA() {
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                        Recite nam o izazovima vašeg tima
+                        Recite nam o izazovima vašeg tima *
                       </label>
                       <Textarea
                         id="message"
                         name="message"
+                        required
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Koje specifične probleme ima vaš tim? Kako bi uspeh izgledao za vas?"
@@ -174,7 +182,7 @@ export default function FinalCTA() {
                     {submitStatus === "error" && (
                       <div className="flex items-center gap-2 p-3 bg-destructive/10 text-destructive rounded-lg">
                         <AlertCircle className="w-4 h-4" />
-                        <span className="text-sm">Nešto je pošlo po zlu. Molimo pokušajte ponovo.</span>
+                        <span className="text-sm">{errorMessage}</span>
                       </div>
                     )}
 

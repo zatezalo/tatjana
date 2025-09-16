@@ -19,6 +19,7 @@ export default function FinalCTA() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,11 +38,15 @@ export default function FinalCTA() {
       if (response.ok) {
         setSubmitStatus("success");
         setFormData({ name: "", email: "", company: "", teamSize: "", message: "" });
+        setErrorMessage("");
       } else {
+        const errorData = await response.json();
         setSubmitStatus("error");
+        setErrorMessage(errorData.message || "Something went wrong. Please try again.");
       }
     } catch {
       setSubmitStatus("error");
+      setErrorMessage("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -124,12 +129,13 @@ export default function FinalCTA() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                          Company Name
+                          Company Name *
                         </label>
                         <Input
                           id="company"
                           name="company"
                           type="text"
+                          required
                           value={formData.company}
                           onChange={handleChange}
                           placeholder="Your company"
@@ -137,11 +143,12 @@ export default function FinalCTA() {
                       </div>
                       <div>
                         <label htmlFor="teamSize" className="block text-sm font-medium text-foreground mb-2">
-                          Team Size
+                          Team Size *
                         </label>
                         <select
                           id="teamSize"
                           name="teamSize"
+                          required
                           value={formData.teamSize}
                           onChange={handleChange}
                           className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
@@ -158,11 +165,12 @@ export default function FinalCTA() {
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                        Tell us about your team&apos;s challenges
+                        Tell us about your team&apos;s challenges *
                       </label>
                       <Textarea
                         id="message"
                         name="message"
+                        required
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="What specific issues is your team facing? What would success look like for you?"
@@ -173,7 +181,7 @@ export default function FinalCTA() {
                     {submitStatus === "error" && (
                       <div className="flex items-center gap-2 p-3 bg-destructive/10 text-destructive rounded-lg">
                         <AlertCircle className="w-4 h-4" />
-                        <span className="text-sm">Something went wrong. Please try again.</span>
+                        <span className="text-sm">{errorMessage}</span>
                       </div>
                     )}
 
