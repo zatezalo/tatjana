@@ -2,8 +2,9 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import LanguagePicker from "@/components/ui/language-picker";
-import { Users, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,8 +15,8 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Users className="w-5 h-5 text-primary-foreground" />
+            <div className="w-8 h-8 flex items-center justify-center">
+              <Image src="/logo.png" alt="Tatjana Šokčić" width={20} height={20} />
             </div>
             <span className="text-foreground">Tatjana Šokčić</span>
           </Link>

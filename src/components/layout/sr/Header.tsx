@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import LanguagePicker from "@/components/ui/language-picker";
-import { Users, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -14,8 +15,8 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/sr" className="flex items-center gap-2 font-bold text-xl">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Users className="w-5 h-5 text-primary-foreground" />
+            <div className="w-8 h-8 flex items-center justify-center">
+              <Image src="/logo.png" alt="Tatjana Šokčić" width={32} height={32} />
             </div>
             <span className="text-foreground">Tatjana Šokčić</span>
           </Link>

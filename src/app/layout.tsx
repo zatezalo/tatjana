@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Team transformation Program" }],
   creator: "Team transformation Program",
   publisher: "Team transformation Program",
+  icons: {
+    icon: "/logo.png",
+  },
   formatDetection: {
     email: false,
     address: false,
