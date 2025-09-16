@@ -49,7 +49,7 @@ export default function Hero() {
                 12 Months
               </h3>
               <p className="text-foreground">
-                Build a team that plans, ships, and improves without you.
+              An aligned and effective team that plans, delivers, and creates new revenue.
               </p>
             </div>
 

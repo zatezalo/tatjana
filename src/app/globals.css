@@ -122,3 +122,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes scroll-seamless {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-seamless {
+  animation: scroll-seamless 20s linear infinite;
+  will-change: transform;
+}
+

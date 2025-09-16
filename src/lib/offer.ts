@@ -36,7 +36,7 @@ export const offer = {
         period: "Phase 1 · Months 1–3",
         title: "Get Clarity and Momentum",
         description: {
-          whatYouGet: "17 individual sessions (1on1) + 2 group sessions + 4 workshops + 3 assessments + personalized educational materials and exercises for every team member + documents and messages analysis + mentorship + e-mail and offline support (up to 3h per month) + wellbeing plan for every team member.",
+          whatYouGet: "17 individual sessions (1on1) + 2 group sessions + 4 workshops + 3 assessments + personalized educational materials and exercises for every team member + document and message analysis + mentorship + e-mail and offline support (up to 3h per month) + wellbeing plan for every team member.",
           howWeWork: "We map how your team operates today, identify the real obstacles slowing delivery, then reset communication with mutual respect and clear expectations, defining roles precisely and ensuring delegated tasks are owned.",
           results: "An established system - improved communication, trust, collaboration, and clear goals.",
         }
@@ -45,7 +45,7 @@ export const offer = {
         period: "Phase 2 · Months 4–6",
         title: "Make Systems Stick",
         description: {
-          whatYouGet: "15 individual sessions (1on1) + 3 group sessions + 3 workshops + personalized educational materials and exercises for every team member + documents and messages analysis + mentorship + e-mail and offline support (up to 3h per month) + wellbeing plan for every team member.",
+          whatYouGet: "15 individual sessions (1on1) + 3 group sessions + 3 workshops + personalized educational materials and exercises for every team member + document and message analysis + mentorship + e-mail and offline support (up to 3h per month) + wellbeing plan for every team member.",
           howWeWork: "We establish a disciplined planning rhythm - quarterly objectives, monthly priorities, weekly commitment - so strategy reliably translates into delivery. We create a respectful feedback culture. We validate the new system in real conditions and make practical adjustments.",
           results: "A validated system - coordinated team, continuous results.",
         }
@@ -54,7 +54,7 @@ export const offer = {
         period: "Phase 3 · Months 7–12",
         title: "Experience Growth",
         description: {
-          whatYouGet: "6 individual sessions (1on1) + 6 group sessions + personalized educational materials and exercises for every team member + documents and messages analysis + mentorship + e-mail and offline support (up to 3h per month) + wellbeing plan for every team member.",
+          whatYouGet: "6 individual sessions (1on1) + 6 group sessions + personalized educational materials and exercises for every team member + document and message analysis + mentorship + e-mail and offline support (up to 3h per month) + wellbeing plan for every team member.",
           howWeWork: "In this phase the coach provides support to ensure you stay on the right path with the new mindset. As we look back on our journey and close out, the change is obvious - the team is confident and engaged, corrects course quickly, and delivers reliably. People feel it - work is clearer, output is higher, days are calmer. Your system is backed by everything that you’ve learned and implemented - the team has flourished.",
           results: "A grown system - harmony, ownership, innovation.",
         }
@@ -68,7 +68,7 @@ export const offer = {
       offlineSupport: "36h offline support",
       excercises: "Materials and exercises ",
     },
-    promise: "Visible improvements by day 90 or we tell you who is blocking progress and what to do next.",
+    promise: "Visible improvements by day 90 or we tell you what is blocking progress and what to do next.",
     cta: "Schedule your free intro call.",
   },
   caseStudies: [

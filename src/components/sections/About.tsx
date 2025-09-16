@@ -22,6 +22,25 @@ export default function About() {
                   className="object-cover"
                 />
               </div>
+              <div className="pt-4">
+                <div className="flex flex-wrap gap-4">
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    PCC, ICF Certified
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    EBRD Consultant
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Accredited Inspire Assessor
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Hogan & SDI Certified
+                  </span>
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+                    Licensed Mediator
+                  </span>
+                </div>
+              </div>
             </div>
 
             {/* Content on the right */}
@@ -54,11 +73,12 @@ export default function About() {
                 </p>
 
                 <p className="font-medium text-foreground">
-                  Certified executive coach (PCC, ICF), licensed mediator, and
-                  accredited assessor for Inspire, Hogan, and SDI, she combines
-                  diagnostics, workshops, and 1:1 coaching. As an accredited
-                  EBRD consultant, she&apos;s trusted to solve critical growth
-                  and leadership challenges for international organizations.
+                  Tatjana is a certified executive coach (PCC, ICF), licensed
+                  mediator, and accredited assessor for Inspire, Hogan, and SDI;
+                  she combines diagnostics, workshops, and 1:1 coaching. As an
+                  accredited EBRD consultant, she&apos;s trusted to solve critical
+                  growth and leadership challenges for international
+                  organizations.
                 </p>
                 <p className="font-medium text-foreground">
                   Clients don&apos;t just leave with insights - they leave with
@@ -68,27 +88,88 @@ export default function About() {
               </div>
 
               {/* Credentials */}
-              <div className="pt-4">
-                <div className="flex flex-wrap gap-4">
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    PCC, ICF Certified
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    EBRD Consultant
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Accredited Inspire Assessor
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Hogan & SDI Certified
-                  </span>
-                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    Licensed Mediator
-                  </span>
+             
+            </div>
+          </div>
+          
+          {/* Client Logos Carousel */}
+          <div className="mt-6 pt-6 border-t border-border">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-2">
+                Trusted by Leading Companies
+              </h3>
+              <p className="text-muted-foreground">
+                Organizations that trust Tatjana to transform their teams
+              </p>
+            </div>
+            
+            <div className="relative overflow-hidden">
+              <div className="flex animate-scroll-seamless">
+                {/* First complete set */}
+                <div className="flex flex-shrink-0">
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
+                    <Image
+                      src="/referals/fresenius-medical-care.png"
+                      alt="Fresenius Medical Care"
+                      width={120}
+                      height={60}
+                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
+                    <Image
+                      src="/referals/logo-acb-company.png"
+                      alt="ACB Company"
+                      width={120}
+                      height={60}
+                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
+                    <Image
+                      src="/referals/nis-logo.png"
+                      alt="NIS"
+                      width={120}
+                      height={60}
+                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                
+                {/* Duplicate set for seamless loop */}
+                <div className="flex flex-shrink-0">
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
+                    <Image
+                      src="/referals/fresenius-medical-care.png"
+                      alt="Fresenius Medical Care"
+                      width={120}
+                      height={60}
+                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
+                    <Image
+                      src="/referals/logo-acb-company.png"
+                      alt="ACB Company"
+                      width={120}
+                      height={60}
+                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-4 md:mx-6">
+                    <Image
+                      src="/referals/nis-logo.png"
+                      alt="NIS"
+                      width={120}
+                      height={60}
+                      className="object-contain opacity-70 hover:opacity-100 transition-opacity"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
