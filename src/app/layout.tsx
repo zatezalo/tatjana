@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   creator: "Tatjana Šokčić",
   publisher: "Tatjana Šokčić",
   icons: {
-    icon: "/logo.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   formatDetection: {
     email: false,
