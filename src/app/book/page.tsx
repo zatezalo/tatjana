@@ -31,8 +31,10 @@ export default function BookPage() {
                 <CardContent className="w-full">
                   {/* Calendly iframe */}
                   <div className="w-full">
+{/* <div class="calendly-inline-widget" data-url="https://calendly.com/tatjana-sokcic/30min" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> */}
                     <iframe
-                      src="https://calendly.com/zatezalo123/30min"
+                      src="https://calendly.com/tatjana-sokcic/30min"
                       width="100%"
                       height="600"
                       title="Schedule a meeting"
