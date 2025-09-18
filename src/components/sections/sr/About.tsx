@@ -116,8 +116,12 @@ export default function About() {
                       alt: "ACB Company",
                     },
                     { src: "/referals/nis-logo.png", alt: "NIS" },
+                    { src: "/referals/TakkoLogo.png", alt: "Takko" },
+                    { src: "/referals/Adient_Logo.png", alt: "Adient" },
+                    { src: "/referals/Logo-elopak.png", alt: "Elopak" },
+                    { src: "/referals/nortal-logo.png", alt: "Nortal" },
                   ];
-                  const logo = logos[index % 3];
+                  const logo = logos[index % logos.length];
 
                   return (
                     <div
@@ -147,8 +151,12 @@ export default function About() {
                       alt: "ACB Company",
                     },
                     { src: "/referals/nis-logo.png", alt: "NIS" },
+                    { src: "/referals/TakkoLogo.png", alt: "Takko" },
+                    { src: "/referals/Adient_Logo.png", alt: "Adient" },
+                    { src: "/referals/Logo-elopak.png", alt: "Elopak" },
+                    { src: "/referals/nortal-logo.png", alt: "Nortal" },
                   ];
-                  const logo = logos[index % 3];
+                  const logo = logos[index % logos.length];
 
                   return (
                     <div

@@ -76,8 +76,8 @@ export default function About() {
                   Tatjana is a certified executive coach (PCC, ICF), licensed
                   mediator, and accredited assessor for Inspire, Hogan, and SDI;
                   she combines diagnostics, workshops, and 1:1 coaching. As an
-                  accredited EBRD consultant, she&apos;s trusted to solve critical
-                  growth and leadership challenges for international
+                  accredited EBRD consultant, she&apos;s trusted to solve
+                  critical growth and leadership challenges for international
                   organizations.
                 </p>
                 <p className="font-medium text-foreground">
@@ -88,10 +88,9 @@ export default function About() {
               </div>
 
               {/* Credentials */}
-             
             </div>
           </div>
-          
+
           {/* Client Logos Carousel */}
           <div className="mt-6 pt-6 border-t border-border">
             <div className="text-center mb-8">
@@ -102,20 +101,33 @@ export default function About() {
                 Organizations that trust Tatjana to transform their teams
               </p>
             </div>
-            
+
             <div className="relative overflow-hidden">
               <div className="flex animate-infinite-scroll whitespace-nowrap">
                 {/* Create many repetitions of logos for true infinite scroll */}
                 {Array.from({ length: 20 }).map((_, index) => {
                   const logos = [
-                    { src: '/referals/fresenius-medical-care.png', alt: 'Fresenius Medical Care' },
-                    { src: '/referals/logo-acb-company.png', alt: 'ACB Company' },
-                    { src: '/referals/nis-logo.png', alt: 'NIS' }
+                    {
+                      src: "/referals/fresenius-medical-care.png",
+                      alt: "Fresenius Medical Care",
+                    },
+                    {
+                      src: "/referals/logo-acb-company.png",
+                      alt: "ACB Company",
+                    },
+                    { src: "/referals/nis-logo.png", alt: "NIS" },
+                    { src: "/referals/TakkoLogo.png", alt: "Takko" },
+                    { src: "/referals/Adient_Logo.png", alt: "Adient" },
+                    { src: "/referals/Logo-elopak.png", alt: "Elopak" },
+                    { src: "/referals/nortal-logo.png", alt: "Nortal" },
                   ];
-                  const logo = logos[index % 3];
-                  
+                  const logo = logos[index % logos.length];
+
                   return (
-                    <div key={index} className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0">
+                    <div
+                      key={index}
+                      className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0"
+                    >
                       <Image
                         src={logo.src}
                         alt={logo.alt}
@@ -126,18 +138,31 @@ export default function About() {
                     </div>
                   );
                 })}
-                
+
                 {/* Duplicate the entire sequence for seamless looping */}
                 {Array.from({ length: 20 }).map((_, index) => {
                   const logos = [
-                    { src: '/referals/fresenius-medical-care.png', alt: 'Fresenius Medical Care' },
-                    { src: '/referals/logo-acb-company.png', alt: 'ACB Company' },
-                    { src: '/referals/nis-logo.png', alt: 'NIS' }
+                    {
+                      src: "/referals/fresenius-medical-care.png",
+                      alt: "Fresenius Medical Care",
+                    },
+                    {
+                      src: "/referals/logo-acb-company.png",
+                      alt: "ACB Company",
+                    },
+                    { src: "/referals/nis-logo.png", alt: "NIS" },
+                    { src: "/referals/TakkoLogo.png", alt: "Takko" },
+                    { src: "/referals/Adient_Logo.png", alt: "Adient" },
+                    { src: "/referals/Logo-elopak.png", alt: "Elopak" },
+                    { src: "/referals/nortal-logo.png", alt: "Nortal" },
                   ];
-                  const logo = logos[index % 3];
-                  
+                  const logo = logos[index % logos.length];
+
                   return (
-                    <div key={`duplicate-${index}`} className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0">
+                    <div
+                      key={`duplicate-${index}`}
+                      className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 mx-6 md:mx-8 flex-shrink-0"
+                    >
                       <Image
                         src={logo.src}
                         alt={logo.alt}
@@ -151,7 +176,6 @@ export default function About() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
