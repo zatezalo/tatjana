@@ -96,7 +96,7 @@ export default function ValueStack() {
                       <br />
                       (default team size is 4)
                     </div>
-                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                    <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
                       Receive a 12-month Wellbeing plan for every team member
                     </div>
                   </div>
