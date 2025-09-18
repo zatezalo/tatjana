@@ -256,7 +256,7 @@ export default function FinalCTA() {
                       <span className="text-primary font-bold text-sm">3</span>
                     </div>
                     <div>
-                      <h4 className="font-medium text-foreground">Start Transformation</h4>
+                      <h4 className="font-medium text-foreground">Transformation Starts</h4>
                       <p className="text-sm text-foreground">Begin your 12-month journey to team excellence</p>
                     </div>
                   </div>

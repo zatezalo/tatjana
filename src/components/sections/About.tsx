@@ -64,7 +64,7 @@ export default function About() {
                   ones that deliver 50% more output within 12 months.
                 </p>
 
-                <p className="font-medium text-foreground">
+                <p className="font-medium text-foreground italic">
                   During my 15 years in management roles, I had worked with
                   great individuals, but the biggest challenge was to achieve
                   greatness as a team. Most teams never have problems with

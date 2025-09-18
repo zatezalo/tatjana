@@ -93,7 +93,11 @@ export default function ValueStack() {
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
                       Add extra person: {offer.valueStack.investment.addOn}{" "}
-                      <br />(default team size is 4)
+                      <br />
+                      (default team size is 4)
+                    </div>
+                    <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+                      Receive a 12-month Wellbeing plan for every team member
                     </div>
                   </div>
                   {/* <div className="text-xs text-foreground space-y-1">
@@ -123,7 +127,8 @@ export default function ValueStack() {
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Add extra person: €3,000 each <br />(default team size is 4)
+                      Add extra person: €3,000 each <br />
+                      (default team size is 4)
                     </div>
                   </div>
                 </div>
@@ -142,7 +147,11 @@ export default function ValueStack() {
                 </div> */}
 
                 <div>
-                  <Button asChild className="w-full mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 h-auto" size="lg">
+                  <Button
+                    asChild
+                    className="w-full mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 h-auto"
+                    size="lg"
+                  >
                     <Link href="/book">Book Your Free Consultation</Link>
                   </Button>
                   <div className="text-center">

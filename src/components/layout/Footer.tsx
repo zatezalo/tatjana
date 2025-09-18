@@ -113,7 +113,7 @@ export default function Footer() {
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-foreground">
-            © 2024 Team Transform. All rights reserved.
+            © 2025 Team Transform. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link

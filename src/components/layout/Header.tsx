@@ -16,7 +16,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-xl">
             <div className="w-8 h-8 flex items-center justify-center">
-              <Image src="/logo.png" alt="Tatjana Šokčić" width={20} height={20} />
+              <Image src="/logo.png" alt="Tatjana Šokčić" width={32} height={32} />
             </div>
             <span className="text-foreground">Tatjana Šokčić</span>
           </Link>

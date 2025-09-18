@@ -18,7 +18,7 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            DO YOU WANT A MORE EFFECTIVE TEAM?
+            Do You Want a More Effective Team?
           </h1>
 
           {/* Subheadline */}
@@ -49,7 +49,8 @@ export default function Hero() {
                 12 Months
               </h3>
               <p className="text-foreground">
-              An aligned and effective team that plans, delivers, and creates new revenue.
+                An aligned and effective team that plans, delivers, and creates
+                new revenue.
               </p>
             </div>
 
