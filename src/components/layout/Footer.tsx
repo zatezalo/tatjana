@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Users, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,14 +9,23 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4 md:col-start-2">
-            <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Users className="w-5 h-5 text-primary-foreground" />
+            <Link
+              href="/"
+              className="flex items-center gap-2 font-bold text-xl"
+            >
+              <div className="w-8 h-8 flex items-center justify-center">
+                <Image
+                  src="/logo.png"
+                  alt="Tatjana Šokčić"
+                  width={32}
+                  height={32}
+                />
               </div>
-              <span className="text-foreground">Tatjana Team Transformer</span>
+              <span className="text-foreground">Tatjana Šokčić</span>
             </Link>
             <p className="text-foreground text-sm">
-            Transforming dysfunctional teams into high-performing ones through proven coaching and development programs.
+              Stop babysitting the team. Build a team that plans, delivers, and
+              improves without you.
             </p>
           </div>
 
@@ -85,7 +95,9 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:tatjana.sokcic@hrcentar.rs">tatjana.sokcic@hrcentar.rs</a>
+                <a href="mailto:tatjana.sokcic@hrcentar.rs">
+                  tatjana.sokcic@hrcentar.rs
+                </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-foreground">
                 <Phone className="w-4 h-4" />
@@ -104,10 +116,16 @@ export default function Footer() {
             © 2024 Team Transform. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-sm text-foreground hover:text-foreground transition-colors">
+            <Link
+              href="/privacy"
+              className="text-sm text-foreground hover:text-foreground transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-sm text-foreground hover:text-foreground transition-colors">
+            <Link
+              href="/terms"
+              className="text-sm text-foreground hover:text-foreground transition-colors"
+            >
               Terms of Service
             </Link>
           </div>
