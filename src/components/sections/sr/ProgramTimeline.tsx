@@ -12,7 +12,7 @@ export default function ProgramTimeline() {
             {offer.timeline.title}
           </h2>
           <p className="text-lg md:text-xl text-foreground">
-            Prve pobede za 90 dana. Vrhunski performirajući tim za 12 meseci.
+            Prve pobede za 90 dana. Vrhunski tim za 12 meseci.
           </p>
         </div>
 
@@ -68,11 +68,15 @@ export default function ProgramTimeline() {
                       <>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Individualne procene</span>
+                          <span className="whitespace-nowrap">
+                            Individualne procene
+                          </span>
                         </div>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Postavljanje ciljeva</span>
+                          <span className="whitespace-nowrap">
+                            Postavljanje ciljeva
+                          </span>
                         </div>
                       </>
                     )}
@@ -80,11 +84,15 @@ export default function ProgramTimeline() {
                       <>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Users className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Timski radionice</span>
+                          <span className="whitespace-nowrap">
+                            Timski radionice
+                          </span>
                         </div>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Izgradnja veština</span>
+                          <span className="whitespace-nowrap">
+                            Izgradnja veština
+                          </span>
                         </div>
                       </>
                     )}
@@ -92,11 +100,15 @@ export default function ProgramTimeline() {
                       <>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <Target className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Praćenje performansi</span>
+                          <span className="whitespace-nowrap">
+                            Praćenje performansi
+                          </span>
                         </div>
                         <div className="flex items-center gap-2 text-xs sm:text-sm text-foreground">
                           <CheckCircle className="w-4 h-4 flex-shrink-0" />
-                          <span className="whitespace-nowrap">Kontinuirano poboljšanje</span>
+                          <span className="whitespace-nowrap">
+                            Kontinuirano poboljšanje
+                          </span>
                         </div>
                       </>
                     )}

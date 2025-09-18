@@ -72,18 +72,18 @@ export default function ValueStack() {
                     </span>
                   </div>
                   <p className="text-sm text-foreground mb-4 font-medium">
-                    Plaćanje odjednom
+                  Plaćanje unapred
                   </p>
                   <div className="space-y-3 mb-4">
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Uštedite €6,000 vs fleksibilni plan (37.5% popusta)
+                    Uštedite €6 000 u odnosu na Postepeni plan (37.5% popusta)
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Uštedite €20,950 vs pojedinačna vrednost (
+                    Uštedite €20,950 u odnosu na pojedinačnu vrednost (
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Dodajte dodatno mesto: {offer.valueStack.investment.addOn}{" "}
+                    Dodatno mesto po osobi: {offer.valueStack.investment.addOn}{" "}
                       <br />(standardna veličina tima je 4)
                     </div>
                   </div>
@@ -103,18 +103,18 @@ export default function ValueStack() {
                     </span>
                   </div>
                   <p className="text-sm text-foreground mb-4">
-                    Fleksibilni plan plaćanja
+                  Plaćanje na rate
                   </p>
                   <div className="space-y-3 mb-4">
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
                       {offer.valueStack.investment.installmentBreakdown}
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Uštedite €14,950 vs pojedinačna vrednost (
+                    Uštedite €14,950 u odnosu na pojedinačnu vrednost  (
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                      Dodajte dodatnu osobu: €3,000 svaki <br />(standardna veličina tima je 4)
+                    Dodatno mesto po osobi: €3,000 (standardna veličina tima je 4)
                     </div>
                   </div>
                 </div>

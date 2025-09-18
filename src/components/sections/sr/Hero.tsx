@@ -18,12 +18,13 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-           DA LI ŽELITE EFEKTIVNIJI TIM?
+            DA LI ŽELITE EFEKTIVNIJI TIM?
           </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground mb-8 sm:mb-10 lg:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
-          Prestanite da &quot;čuvate&quot; tim. Napravite tim koji planira, isporučuje i poboljšava bez vas.
+            Prestanite sa mikromenadžmentom tima. Napravite tim koji planira,
+            isporučuje i donosi nove prilike.
           </p>
 
           {/* Stats */}
@@ -36,7 +37,7 @@ export default function Hero() {
                 90 Dana
               </h3>
               <p className="text-foreground">
-                Garantovane vidljive performanse pobede
+                Zagarantovani vidljivi rezultati u timskom radu
               </p>
             </div>
 
@@ -45,10 +46,11 @@ export default function Hero() {
                 <BarChart3 className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                20+ godina iskustva
+                12 meseci
               </h3>
               <p className="text-foreground">
-                Više od 100 zadovoljnih klijenata
+                Usaglašen i efektivan tim koji planira, isporučuje i donosi
+                profit
               </p>
             </div>
 
@@ -57,11 +59,10 @@ export default function Hero() {
                 <DollarSign className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                Vreme za lidera
-               
+                10+ godina iskustva
               </h3>
               <p className="text-foreground">
-                Prestanite gašenja požara. Fokusirajte se na strategiju
+                Više od 100 zadovoljnih klijenata
               </p>
             </div>
           </div>
@@ -98,4 +99,3 @@ export default function Hero() {
     </section>
   );
 }
-
