@@ -108,7 +108,7 @@ export default function Header() {
               <div className="px-4 pt-2">
                 <Button asChild className="w-full">
                   <Link href="/sr/book" onClick={() => setIsMenuOpen(false)}>
-                    Zakazite konsultaciju
+                    Zakažite konsultaciju
                   </Link>
                 </Button>
               </div>

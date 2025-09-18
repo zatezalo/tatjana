@@ -360,7 +360,7 @@ export default function FinalCTA() {
               <p className="text-foreground mb-6">
                 Preskočite formular i zakazite besplatnu konsultaciju direktno
               </p>
-              <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">
+              <Button asChild size="lg" className="text-sm md:text-lg px-8 py-6 h-auto">
                 <Link href="/sr/book">
                   Zakažite besplatnu konsultaciju
                   <ArrowRight className="ml-2 w-5 h-5" />

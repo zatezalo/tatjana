@@ -72,11 +72,11 @@ export default function Hero() {
             <Button
               asChild
               size="lg"
-              className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto"
+              className="text-sm sm:text-lg px-6 sm:px-8 py-4 sm:py-6 h-auto w-full sm:w-auto"
             >
               <Link href="/sr/book">
                 Počnite sa besplatnim 30-minutnim pozivom
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                <ArrowRight className="ml-1 w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </Button>
             {/* <Button
