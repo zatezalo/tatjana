@@ -45,7 +45,7 @@ export default function Header() {
             </Link>
            
             <Button asChild>
-              <Link href="/sr/book">Zakazite konsultaciju</Link>
+              <Link href="/sr/book">Zakažite konsultaciju</Link>
             </Button>
           </nav>
 

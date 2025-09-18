@@ -123,7 +123,7 @@ export default function ProgramTimeline() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-muted/30 from-primary/5 to-primary/10 rounded-xl p-4 md:p-8 border border-primary/10 mb-6 md:mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6 md:mb-8 text-center">
-              Uključeno
+              Program uključuje
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <div className="bg-white/80 dark:bg-gray-800/80 rounded-lg p-4 md:p-6 text-center items-center shadow-sm border border-primary/10 hover:shadow-md transition-shadow">

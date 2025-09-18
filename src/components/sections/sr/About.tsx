@@ -64,7 +64,7 @@ export default function About() {
                   bolji za 12 meseci.
                 </p>
 
-                <p className="font-medium text-foreground">
+                <p className="font-medium text-foreground italic">
                   Tokom 15 godina rada na menadžerskim pozicijama sarađivala sam
                   sa sjajnim ljudima, a najveći izazov je uvek bio - napraviti
                   sjajan tim. Većina timova nema problem sa stručnošću, već sa

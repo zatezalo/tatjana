@@ -48,7 +48,7 @@ export default function ValueStack() {
                   <div className="flex flex-col gap-6 text-center">
                     <div className="bg-background p-4 rounded-lg border border-primary/10">
                       <div className="text-2xl font-bold text-primary mb-2">
-                        Total Value: €30,950
+                        Ukupna vrednost: €30,950
                       </div>
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export default function ValueStack() {
                 <div className="text-center p-6 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border-2 border-primary/30 relative hover:border-primary/40 transition-colors">
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                     <Badge className="bg-primary text-primary-foreground px-4 py-1 text-xs font-semibold">
-                      NAJBOLJA VREDNOST
+                      NAJVEĆA VREDNOST
                     </Badge>
                   </div>
                   <div className="flex items-center justify-center gap-2 mb-2">
@@ -72,19 +72,21 @@ export default function ValueStack() {
                     </span>
                   </div>
                   <p className="text-sm text-foreground mb-4 font-medium">
-                  Plaćanje unapred
+                    Plaćanje unapred
                   </p>
                   <div className="space-y-3 mb-4">
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                    Uštedite €6 000 u odnosu na Postepeni plan (37.5% popusta)
+                      Uštedite €6 000 u odnosu na plaćanje na rate (37.5%
+                      popusta)
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                    Uštedite €20,950 u odnosu na pojedinačnu vrednost (
+                      Uštedite €20,950 u odnosu na pojedinačnu vrednost (
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg text-sm font-medium">
-                    Dodatno mesto po osobi: {offer.valueStack.investment.addOn}{" "}
-                      <br />(standardna veličina tima je 4)
+                      Dodatno mesto po osobi:{" "}
+                      {offer.valueStack.investment.addOn} <br />
+                      (standardna veličina tima je 4)
                     </div>
                   </div>
                   {/* <div className="text-xs text-foreground space-y-1">
@@ -103,29 +105,34 @@ export default function ValueStack() {
                     </span>
                   </div>
                   <p className="text-sm text-foreground mb-4">
-                  Plaćanje na rate
+                    Plaćanje na rate
                   </p>
                   <div className="space-y-3 mb-4">
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
                       {offer.valueStack.investment.installmentBreakdown}
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                    Uštedite €14,950 u odnosu na pojedinačnu vrednost  (
+                      Uštedite €14,950 u odnosu na pojedinačnu vrednost (
                       {offer.valueStack.totalValue})
                     </div>
                     <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
-                    Dodatno mesto po osobi: €3,000 (standardna veličina tima je 4)
+                      Dodatno mesto po osobi: €3,000 (standardna veličina tima
+                      je 4)
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <Button asChild className="w-full mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 h-auto" size="lg">
-                    <Link href="/sr/book">Zakazite besplatnu konsultaciju</Link>
+                  <Button
+                    asChild
+                    className="w-full mb-2 text-lg sm:text-xl md:text-2xl lg:text-3xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 h-auto"
+                    size="lg"
+                  >
+                    <Link href="/sr/book">Zakažite besplatnu konsultaciju</Link>
                   </Button>
                   <div className="text-center">
                     <Badge className="text-sm sm:text-base md:text-lg px-3 sm:px-4 py-2 bg-[#FFF4E5] text-[#D35400] border border-[#FF9800] hover:bg-[#FFF4E5] hover:cursor-default">
-                      3 mesta dostupna za ovu cenu
+                      Još 3 slobodna mesta po ovoj ceni
                     </Badge>
                   </div>
                 </div>

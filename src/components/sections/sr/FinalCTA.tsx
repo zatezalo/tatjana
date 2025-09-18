@@ -21,7 +21,9 @@ export default function FinalCTA() {
     timestamp: Date.now().toString(), // Form load time
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -40,20 +42,22 @@ export default function FinalCTA() {
 
       if (response.ok) {
         setSubmitStatus("success");
-        setFormData({ 
-          name: "", 
-          email: "", 
-          company: "", 
-          teamSize: "", 
-          message: "", 
-          honeypot: "", 
-          timestamp: Date.now().toString() 
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          teamSize: "",
+          message: "",
+          honeypot: "",
+          timestamp: Date.now().toString(),
         });
         setErrorMessage("");
       } else {
         const errorData = await response.json();
         setSubmitStatus("error");
-        setErrorMessage(errorData.message || "Nešto je pošlo po zlu. Molimo pokušajte ponovo.");
+        setErrorMessage(
+          errorData.message || "Nešto je pošlo po zlu. Molimo pokušajte ponovo."
+        );
       }
     } catch {
       setSubmitStatus("error");
@@ -63,24 +67,29 @@ export default function FinalCTA() {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData(prev => ({
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }));
   };
 
   return (
-    <section id="cta" className="py-20 bg-gradient-to-br from-primary/5 to-primary/10">
+    <section
+      id="cta"
+      className="py-20 bg-gradient-to-br from-primary/5 to-primary/10"
+    >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               {offer.finalCta.title}
             </h2>
-            <p className="text-xl text-foreground">
-              {offer.finalCta.subtitle}
-            </p>
+            <p className="text-xl text-foreground">{offer.finalCta.subtitle}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -96,11 +105,17 @@ export default function FinalCTA() {
                 {submitStatus === "success" ? (
                   <div className="text-center py-8">
                     <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold text-foreground mb-2">Hvala vam!</h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      Hvala vam!
+                    </h3>
                     <p className="text-foreground mb-4">
-                      Primili smo vaše informacije i kontaktiraćemo vas u roku od 24 sata.
+                      Primili smo vaše informacije i kontaktiraćemo vas u roku
+                      od 24 sata.
                     </p>
-                    <Button onClick={() => setSubmitStatus("idle")} variant="outline">
+                    <Button
+                      onClick={() => setSubmitStatus("idle")}
+                      variant="outline"
+                    >
                       Pošaljite još jednu poruku
                     </Button>
                   </div>
@@ -112,14 +127,17 @@ export default function FinalCTA() {
                       name="honeypot"
                       value={formData.honeypot}
                       onChange={handleChange}
-                      style={{ display: 'none' }}
+                      style={{ display: "none" }}
                       tabIndex={-1}
                       autoComplete="off"
                     />
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                        <label
+                          htmlFor="name"
+                          className="block text-sm font-medium text-foreground mb-2"
+                        >
                           Puno ime *
                         </label>
                         <Input
@@ -133,7 +151,10 @@ export default function FinalCTA() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                        <label
+                          htmlFor="email"
+                          className="block text-sm font-medium text-foreground mb-2"
+                        >
                           Email adresa *
                         </label>
                         <Input
@@ -150,7 +171,10 @@ export default function FinalCTA() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                        <label
+                          htmlFor="company"
+                          className="block text-sm font-medium text-foreground mb-2"
+                        >
                           Naziv kompanije *
                         </label>
                         <Input
@@ -164,7 +188,10 @@ export default function FinalCTA() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="teamSize" className="block text-sm font-medium text-foreground mb-2">
+                        <label
+                          htmlFor="teamSize"
+                          className="block text-sm font-medium text-foreground mb-2"
+                        >
                           Veličina tima *
                         </label>
                         <select
@@ -186,7 +213,10 @@ export default function FinalCTA() {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                      <label
+                        htmlFor="message"
+                        className="block text-sm font-medium text-foreground mb-2"
+                      >
                         Recite nam o izazovima vašeg tima *
                       </label>
                       <Textarea
@@ -231,7 +261,9 @@ export default function FinalCTA() {
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl">Šta se dešava dalje?</CardTitle>
+                  <CardTitle className="text-xl">
+                    Šta se dešava dalje?
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -239,8 +271,12 @@ export default function FinalCTA() {
                       <span className="text-primary font-bold text-sm">1</span>
                     </div>
                     <div>
-                      <h4 className="font-medium text-foreground">Besplatna konsultacija</h4>
-                      <p className="text-sm text-foreground">30-minutni poziv da razumemo potrebe vašeg tima</p>
+                      <h4 className="font-medium text-foreground">
+                        Besplatna konsultacija
+                      </h4>
+                      <p className="text-sm text-foreground">
+                        30-minutni poziv da razumemo potrebe vašeg tima
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -248,8 +284,12 @@ export default function FinalCTA() {
                       <span className="text-primary font-bold text-sm">2</span>
                     </div>
                     <div>
-                      <h4 className="font-medium text-foreground">Prilagođeni predlog</h4>
-                      <p className="text-sm text-foreground">Program prilagođen vašoj specifičnoj situaciji</p>
+                      <h4 className="font-medium text-foreground">
+                        Personalizacija programa
+                      </h4>
+                      <p className="text-sm text-foreground">
+                        Program prilagođen vašoj specifičnoj situaciji
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -257,8 +297,13 @@ export default function FinalCTA() {
                       <span className="text-primary font-bold text-sm">3</span>
                     </div>
                     <div>
-                      <h4 className="font-medium text-foreground">Počnite transformaciju</h4>
-                      <p className="text-sm text-foreground">Započnite svoje 12-mesečno putovanje ka timskoj izvrsnosti</p>
+                      <h4 className="font-medium text-foreground">
+                        Početak transformacije
+                      </h4>
+                      <p className="text-sm text-foreground">
+                        Započnite svoje 12-mesečno putovanje ka timskoj
+                        izvrsnosti
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -266,24 +311,34 @@ export default function FinalCTA() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl">Zašto nas izabrati?</CardTitle>
+                  <CardTitle className="text-xl">
+                    Zašto izabrati ovo putovanje?
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-foreground">Dokazana istorija sa preko 100 timova</span>
+                    <span className="text-sm text-foreground">
+                      Dokazana uspešnost sa preko 100 timova
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-foreground">12-mesečni strukturirani program</span>
+                    <span className="text-sm text-foreground">
+                      12-mesečni isplanirani program
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-foreground">€30K+ vrednost za deo cene</span>
+                    <span className="text-sm text-foreground">
+                      Plaćate trećinu dobijene vrednosti od €30K
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-foreground">Nema pozitivnih rezultata - garantija povraćaja novca</span>
+                    <span className="text-sm text-foreground">
+                      Nema pozitivne promene - zagarantovan povraćaj novca
+                    </span>
                   </div>
                 </CardContent>
               </Card>
@@ -300,14 +355,14 @@ export default function FinalCTA() {
           <div className="text-center mt-12">
             <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Spremni da počnete?
+                Spremni na promenu?
               </h3>
               <p className="text-foreground mb-6">
                 Preskočite formular i zakazite besplatnu konsultaciju direktno
               </p>
               <Button asChild size="lg" className="text-lg px-8 py-6 h-auto">
                 <Link href="/sr/book">
-                  Zakazite besplatnu konsultaciju
+                  Zakažite besplatnu konsultaciju
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>

@@ -21,7 +21,7 @@ export default function Footer() {
                   height={32}
                 />
               </div>
-              <span className="text-foreground">Tatjana Tim Transformer</span>
+              <span className="text-foreground">Tatjana Šokčić</span>
             </Link>
             <p className="text-foreground text-sm">
               Prestanite sa mikromenadžmentom tima. Napravite tim koji planira,
@@ -113,7 +113,7 @@ export default function Footer() {
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-foreground">
-            © 2024 Team Transform. Sva prava zadržana.
+            © 2025 Team Transform. Sva prava zadržana.
           </p>
           <div className="flex gap-6">
             <Link

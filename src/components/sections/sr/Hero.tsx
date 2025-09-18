@@ -18,7 +18,7 @@ export default function Hero() {
 
           {/* Main Headline */}
           <h1 className="text-3xl md:text-4xl lg:text-6xl  font-bold text-foreground mb-4 sm:mb-6 leading-tight">
-            DA LI ŽELITE EFEKTIVNIJI TIM?
+            Da li želite efektivniji tim?
           </h1>
 
           {/* Subheadline */}

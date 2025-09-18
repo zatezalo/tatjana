@@ -36,7 +36,7 @@ export const offer = {
         period: "Faza 1 · Meseci 1–3",
         title: "Steknite jasnoću i momentum",
         description: {
-          whatYouGet: "17 individualnih sesija (1on1) + 2 grupne sesije + 4 radionice + 3 procene + personalizovani edukativni materijali i vežbe za svakog člana tima + Analiza dokumenata i poruka + mentorstvo + mail i oflajn podrška (do 3 sata mesečno) + 12-mesečni Wellbeing plan za svakog člana tima - ekskluzivno za paket Plaćanje unapred",
+          whatYouGet: "17 individualnih sesija (1on1) + 2 grupne sesije + 4 radionice + 3 procene + personalizovani edukativni materijali i vežbe za svakog člana tima + Analiza dokumenata i poruka + mentorstvo + mail i oflajn podrška (do 3 sata mesečno) + 12-mesečni Wellbeing plan za svakog člana tima - ekskluzivno za plaćanje unapred",
           howWeWork: "Analiziramo činjenično stanje, kako tim trenutno funkcioniše. Pronalazimo stvarne probleme koji usporavaju produktivnost i unapređujemo komunikaciju na svim nivoima - zasnovanu na uzajamnom uvažavanju i jasnim očekivanjima - tako da uloge budu jasne, a delegiranje funkcioniše.",
           results: "Uspostavljen sistem - unapređena komunikacija, poverenje, saradnja i jasni ciljevi",
         }
@@ -45,7 +45,7 @@ export const offer = {
         period: "Faza 2 · Meseci 4–6",
         title: "Napravite održiv sistem",
         description: {
-          whatYouGet: "15 individualnih sesija (1on1) + 3 grupne sesije + 3 radionice + Personalizovane edukativne materijale i vežbe za svakog člana tima + Analizu dokumenata i poruka + Mentorstvo + mail i oflajn podrška (do 3 sata mesečno) + 12-mesečni Wellbeing plan za svakog člana tima - ekskluzivno za paket Plaćanje unapred",
+          whatYouGet: "15 individualnih sesija (1on1) + 3 grupne sesije + 3 radionice + Personalizovane edukativne materijale i vežbe za svakog člana tima + Analizu dokumenata i poruka + Mentorstvo + mail i oflajn podrška (do 3 sata mesečno) + 12-mesečni Wellbeing plan za svakog člana tima - ekskluzivno za plaćanje unapred",
           howWeWork: "Uspostavljamo disciplinovan ritam planiranja - kvartalne ciljeve, mesečne prioritete, nedeljne obaveze - kako bi se strategija pouzdano prevodila u rezultate. Gradimo kulturu povratne informacije zasnovanu na poštovanju. Validiramo novi sistem u realnim uslovima i prilagođavamo sistem na osnovu prakse.",
           results: "Validiran sistem - usklađen tim, kontinuirani rezultati.",
         }
@@ -54,7 +54,7 @@ export const offer = {
         period: "Faza 3 · Meseci 7–12",
         title: "Doživite promenu",
         description: {
-          whatYouGet: "6 individualnih sesija (1on1) + 6 grupnih sesija + Personalizovane edukativne materijale i vežbe za svakog člana tima + Analizu dokumenata i poruka + Mentorstvo + mejl i oflajn podršku (do 3 sata mesečno) + 12-mesečni Wellbeing plan za svakog člana tima - ekskluzivno za paket Plaćanje unapred",
+          whatYouGet: "6 individualnih sesija (1on1) + 6 grupnih sesija + Personalizovane edukativne materijale i vežbe za svakog člana tima + Analizu dokumenata i poruka + Mentorstvo + mejl i oflajn podršku (do 3 sata mesečno) + 12-mesečni Wellbeing plan za svakog člana tima - ekskluzivno za plaćanje unapred",
           howWeWork: "Kouč u ovoj fazi pruža podršku kako bi tim ostao na pravom putu. Kako privodimo putovanje kraju, promena je očigledna. Tim je samouveren i angažovan, brzo ispravlja greške i isporučuje kvalitet. Promena se oseća u radu - više jasnoće, bolji rezultati, mirniji dani. Sistem je potkrepljen svime što ste naučili i primenili - tim je procvetao.",
           results: "Sistem koji je sazreo - harmonija, odgovornost, inovacije.",
         }
